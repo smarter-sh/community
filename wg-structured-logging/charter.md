@@ -1,13 +1,13 @@
 # WG Structured Logging Charter
 
-This charter adheres to the conventions described in the [Kubernetes Charter README]
+This charter adheres to the conventions described in the [Smarter Charter README]
 and uses the Roles and Organization Management outlined in [wg-governance].
 
-[Kubernetes Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
+[Smarter Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
 
 ## Scope
 
-Modernize logging in Kubernetes core components, allowing users to efficiently consume, process, store and analyse 
+Modernize logging in Smarter core components, allowing users to efficiently consume, process, store and analyse 
 information stored in logs.
 
 ### In Scope
@@ -18,20 +18,20 @@ information stored in logs.
 - Ensure quality consistent logging - overview migration, create documentation, tooling and educate reviewers
 - Prevent regressions caused by logging - measure performance overhead and log volume changes
 
-For all of the above, we will focus on core Kubernetes components and addons.
+For all of the above, we will focus on core Smarter components and addons.
 Other SIG subprojects/components (e.g. SIG Scheduling descheduler) are out of
 scope.
 
 ### Out of scope
 
 - Logging outside the kubernetes/kubernetes repository
-- Non core Kubernetes component binaries like kubectl and kubeadm
+- Non core Smarter component binaries like kubectl and kubeadm
 - Application logs read by kubectl
 
 ## Stakeholders
 
 Stakeholders in this working group span multiple SIGs that own parts of 
-the code in core Kubernetes components and addons.
+the code in core Smarter components and addons.
 
   - API Machinery
   - Architecture

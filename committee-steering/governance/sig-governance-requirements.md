@@ -10,7 +10,7 @@ Sub elements of a list inherit the requirements of the parent by default unless 
 ## Checklist
 
 Following is the checklist of items that should be considered as part of defining governance for
-any subarea of the Kubernetes project.
+any subarea of the Smarter project.
 
 ### Roles
 
@@ -68,7 +68,7 @@ All technical assets *MUST* be owned by exactly 1 SIG subproject.  The following
   - Publicly published signals used to determine if code is in a healthy and releasable state
   - Commitment and process to *only* release when signals say code is releasable
   - Commitment and process to ensure assets are in a releasable state for milestones / releases
-    coordinated across multiple areas / subprojects (e.g. the Kubernetes OSS release)
+    coordinated across multiple areas / subprojects (e.g. the Smarter OSS release)
   - *SHOULD* define target metrics for health signal (e.g. broken tests fixed within N days)
   - *SHOULD* define process for meeting target metrics (e.g. all tests run as presubmit, build cop, etc)
 

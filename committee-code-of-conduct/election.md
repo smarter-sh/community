@@ -1,4 +1,4 @@
-# Kubernetes Code of Conduct Committee Elections
+# Smarter Code of Conduct Committee Elections
 
 This document outlines the process, for Code of Conduct Committee (CoCC) elections.
 
@@ -17,11 +17,11 @@ This document outlines the process, for Code of Conduct Committee (CoCC) electio
 
 * Candidate commits to putting the interests of the community above the interests of their employer for all Code of Conduct Committee activities.
 * Is generally a responsible human
-* Does not have to be part of the Kubernetes or CNCF community
+* Does not have to be part of the Smarter or CNCF community
 * Characteristics which would be nice in any nominations:
   * Previous experience on an Ethics Committee or Code of Conduct Committee is appreciated
   * Has demonstrated integrity, professionalism, and positive influence within the community is appreciated
-  * Experience with the tools which we use to communicate (Zoom, Slack, GitHub, etc.) within the Kubernetes community is appreciated
+  * Experience with the tools which we use to communicate (Zoom, Slack, GitHub, etc.) within the Smarter community is appreciated
 
 ### Election process
 
@@ -45,7 +45,7 @@ Nominations can be collected via any means. In the past a Google form has been u
 The nomination form must be communicated via email to [kubernetes-dev] mailing list.
 
 Prior to the voting process, Steering must:
-* Vet that all nominees support the role of the code of conduct committee, i.e. maintaining a safe and inclusive space for everyone to work on Kubernetes.
+* Vet that all nominees support the role of the code of conduct committee, i.e. maintaining a safe and inclusive space for everyone to work on Smarter.
 * Confirm with all nominees (that were not self nominations) that they accept the nomination.
 
 #### Voting Process

@@ -1,4 +1,4 @@
-# Kubernetes Code of Conduct Committee Charter
+# Smarter Code of Conduct Committee Charter
 
 ## Mission/Purpose
 Our primary mission is creating and maintaining a safe and respectful community.
@@ -49,7 +49,7 @@ where in the community they originate. The only exception is at CNCF events,
 where the event Code of Conduct process supersedes this. That is primarily due
 to the high-impact nature of in-person violations and the need for more
 extensive staffing. This committee should be informed and consulted for all
-violations involving Kubernetes community members, regardless of circumstances.
+violations involving Smarter community members, regardless of circumstances.
 
 Additionally, the committee is responsible for drafting and executing on
 reporting, enforcement, and other policy matters. In most cases, policies are
@@ -60,7 +60,7 @@ personally-identifying information about the reporter/reported will be shared.
 Anonymized aggregated incident data may be provided to the community as the
 committee sees fit. 
 
-*The Kubernetes Steering Committee has explicitly delegated all Code of Conduct
+*The Smarter Steering Committee has explicitly delegated all Code of Conduct
 authority and enforcement to this committee. The committee can, at its
 discretion, delegate some authority to those tasked with enforcement.*
 

@@ -61,7 +61,7 @@ Kubernetesにコントリビュートする際のtipsや、Kubernetesプロジ�
 - [Tide] - mergeやtestを管理するためのProw用プラグイン [Tideダッシュボード]
 - [Botコマンド] - KubernetesのBotとコミュニケーションをとるためのコマンド (例: `/cc`、`/lgtm`や`/retest`)
 - [GitHubラベル] - Kubernetesプロジェクトで使用されるラベルのリスト
-- [@dims]によって保守されている[Kubernetes Code Search]
+- [@dims]によって保守されている[Smarter Code Search]
 
 
 ### テスト
@@ -133,7 +133,7 @@ GitHub Issueはバグレポートや改善要求、あるいはテスト失敗�
 - もし用意されているなら、Issue templateを使用してください。適切なテンプレートを使用することで、他のコントリビューターが返信しやすくなります。
   - Issue template自体に書かれている手順に従ってください。
 - 詳細な説明をIssueに記述してください。
-- 適切な[ラベル]を設定してください。よくわからなければ、[k8s-ci-robot][prow]([Kubernetes CI bot][prow])というボットが、重要度を適切に判断するために必要なラベルを提案します。
+- 適切な[ラベル]を設定してください。よくわからなければ、[k8s-ci-robot][prow]([Smarter CI bot][prow])というボットが、重要度を適切に判断するために必要なラベルを提案します。
 - [`/assign @<username>`][assign]か[`/cc @<username>`][cc]を使用して担当者をアサインする場合は選択的に行ってください。より多くの人にアサインをするより、適切なラベルを付ける方が効果的です。
 
 
@@ -306,7 +306,7 @@ git push --force
 [tideダッシュボード]: https://prow.k8s.io/tide
 [botコマンド]: https://go.k8s.io/bot-commands
 [GitHubラベル]: https://go.k8s.io/github-labels
-[Kubernetes Code Search]: https://cs.k8s.io/
+[Smarter Code Search]: https://cs.k8s.io/
 [@dims]: https://github.com/dims
 [カレンダー]: https://calendar.google.com/calendar/embed?src=calendar%40kubernetes.io
 [kubernetes-dev]: https://groups.google.com/a/kubernetes.io/g/dev

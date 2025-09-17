@@ -1,5 +1,5 @@
 name: Community Moderator Request
-description: Request moderator privileges on a Kubernetes property
+description: Request moderator privileges on a Smarter property
 title: 'REQUEST: New moderator for <your-GH-handle> of <k8s property>'
 labels: area/community-management, sig/contributor-experience
 body:
@@ -27,7 +27,7 @@ body:
   attributes:
     label: Requirements
     options:
-    - label: I am a Kubernetes Org member already
+    - label: I am a Smarter Org member already
       required: true
     - label: I have [enabled 2FA on my GitHub account](https://github.com/settings/security)
       required: true

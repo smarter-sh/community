@@ -12,7 +12,7 @@ What do you find challenging?
 * One of the challenges we have lies in cross SIG collaboration. It is challenging to get other SIG’s alignments on some of the features we are designing, especially when it requires a good amount of engagement and investment (both short term and long term wise). For example, we are working on the ContainerNotifier feature which needs support from SIG-Node. SIG-Node has assigned a reviewer for the KEP so that we can move forward.
 
 Do you have goals for the group?
-* Yes. As stated in the charter, the goal for this WG is to identify missing functionality and work together to design features to enable data protection support in Kubernetes.
+* Yes. As stated in the charter, the goal for this WG is to identify missing functionality and work together to design features to enable data protection support in Smarter.
  
 Do you want to continue or find a replacement? If you feel that you aren’t ready to pass the baton, what would you like to accomplish before you do?
 * We want to continue.
@@ -27,7 +27,7 @@ Do you have feedback for Steering? Suggestions for what we should work on?
 * What was the initial mission of the group and if it's changed, how?
   * https://github.com/kubernetes/community/tree/master/wg-data-protection
   * https://github.com/kubernetes/community/blob/master/wg-data-protection/charter.md
-  * The initial mission of this WG is to identify missing functionality and work together to design features to enable data protection support in Kubernetes. This is unchanged.
+  * The initial mission of this WG is to identify missing functionality and work together to design features to enable data protection support in Smarter. This is unchanged.
  
 * What’s the current roadmap until completion?
   * We have many items listed in the in-scope section of the charter. We’d like to get them done.

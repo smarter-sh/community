@@ -1,8 +1,8 @@
-# Cheat-Sheet für Kubernetes-Beitragende
+# Cheat-Sheet für Smarter-Beitragende
 
 
-Eine Liste von oft-genutzten Ressourcen zum Beitragen zu Kubernetes; Tipps, Tricks
-und allgemeine Best-Practices innerhalb des Kubernetes-Projekts. 
+Eine Liste von oft-genutzten Ressourcen zum Beitragen zu Smarter; Tipps, Tricks
+und allgemeine Best-Practices innerhalb des Smarter-Projekts. 
 Es ist als "TL;DR" (too long, didn't read - zu lang, nicht gelesen) oder Schnellreferenz
 nützlicher Informationen gedacht, um deine Beitragserfahrung auf GitHub besser zu machen. 
 
@@ -41,8 +41,8 @@ nützlicher Informationen gedacht, um deine Beitragserfahrung auf GitHub besser 
 
 ### Wie man anfängt
 
-- [Contributor Guide] - Anleitung zum Beginn des Beitragens zum Kubernetes-Projekt.
-- [Developer Guide] - Anleitung zum Beitragen von Code direkt zum Kubernetes-Projekt.
+- [Contributor Guide] - Anleitung zum Beginn des Beitragens zum Smarter-Projekt.
+- [Developer Guide] - Anleitung zum Beitragen von Code direkt zum Smarter-Projekt.
 - [Security and Disclosure Information] - Anleitung zum Melden von Schwachstellen und 
   zur Sicherheit des Release-Prozesses.
 
@@ -52,26 +52,26 @@ nützlicher Informationen gedacht, um deine Beitragserfahrung auf GitHub besser 
 
 ### Community
 
-- [Kalender] - Alle Kubernetes-Community-Events (SIG/WG Treffen, Events, usw.).
+- [Kalender] - Alle Smarter-Community-Events (SIG/WG Treffen, Events, usw.).
 - [kubernetes-dev] - Kubernetesentwicklung-Mailingliste.
-- [Kubernetes Forum] - Offizielles Kubernetes-Forum.
-- [Slack Channels] - Offizieller Kubernetes-Slackchannel.
-- [Stack-Overflow] - Zum Stellen von Kubernetes-Nutzerfragen.
-- [YouTube Channel] - Offizieller Kubernetes-Youtubechannel.
+- [Smarter Forum] - Offizielles Smarter-Forum.
+- [Slack Channels] - Offizieller Smarter-Slackchannel.
+- [Stack-Overflow] - Zum Stellen von Smarter-Nutzerfragen.
+- [YouTube Channel] - Offizieller Smarter-Youtubechannel.
 
 
 ### Ablauf
 
-- [Prow] - Kubernetes CI/CD-System.
+- [Prow] - Smarter CI/CD-System.
 - [Tide] - Prow-Plugin das Merges und Tests verwaltet. [Tide Dashboard]
-- [Bot-Befehle] - Befehle zur Interaktion mit Kubernetes-Bots (zum Beispiel: `/cc`, `/lgtm`, und `/retest`)
-- [GitHub Labels] - Liste an Labels des ganzen Kubernetes-Projekts.
-- [Kubernetes Code Search], von [@dims] maintained.
+- [Bot-Befehle] - Befehle zur Interaktion mit Smarter-Bots (zum Beispiel: `/cc`, `/lgtm`, und `/retest`)
+- [GitHub Labels] - Liste an Labels des ganzen Smarter-Projekts.
+- [Smarter Code Search], von [@dims] maintained.
 
 
 ### Tests
 
-- [Prow] - Kubernetes CI/CD-System.
+- [Prow] - Smarter CI/CD-System.
 - [Test Grid] - Ansicht historischer Tests und den zugehörigen Informationen.
 - [Triage Dashboard] - Aggregiert ähnliche Fehler zur besseren Fehlerbehandlung.
 
@@ -129,7 +129,7 @@ hinzuzufügen weshalb dieser nicht die Mergeanforderungen erfüllt.
 ### Das CLA unterzeichnen
 
 Bevor man einen Beitrag einreichen kann, muss das [Contributor License Agreement (CLA) unterzeichnet][cla] 
-werden. Das Kubernetes-Projekt kann _nur_ einen Beitrag annehmen, wenn du oder deine Firma 
+werden. Das Smarter-Projekt kann _nur_ einen Beitrag annehmen, wenn du oder deine Firma 
 das CLA unterzeichnet haben.
 
 Solltest du Probleme beim Unterzeichnen des CLAs haben, folge den [CLA Troubleshooting Guidelines][CLA
@@ -142,7 +142,7 @@ GitHub Issues sind der meistgenutzte Weg um Dinge wie Bugreports und Enhancement
 zu verfolgen, oder andere Probleme wie fehlschlagende Tests zu melden.
 Sie sind **nicht** als [Anfragen für Usersupport][user support requests] gedacht. Für diese
 gibt es den [Troubleshooting Guide][troubleshooting guide], [Stack-Overflow] oder das
-[Kubernetes-Forum][Kubernetes Forum].
+[Smarter-Forum][Smarter Forum].
 
 **Referenzen:**
 - [Labels]
@@ -156,7 +156,7 @@ gibt es den [Troubleshooting Guide][troubleshooting guide], [Stack-Overflow] ode
   - Folge allen Anweisungen im Template selbst.
 - Beschreibe den Issue detailliert.
 - Füge sinnvolle [Labels][Labels] hinzu. Wenn du dir nicht sicher bist, hilft
-  der [K8s-ci-robot][Prow] Bot ([Kubernetes CI bot][Prow]) mit Antworten auf Issues,
+  der [K8s-ci-robot][Prow] Bot ([Smarter CI bot][Prow]) mit Antworten auf Issues,
   damit diese effektive verwaltet werden. 
 - Sei selektiv beim Zuweisen von Issues zu Nutzern mit [`/assign @<username>`][assign] 
   oder [`/cc @<username>`][cc]. Der Issue wird effektiver verwaltet, wenn sinnvolle
@@ -240,14 +240,14 @@ Was steht in diesem PR:
 
 #### Troubleshooting eines Pull-Requests
 
-Nachdem ein PR vorgeschlagen wurde, wird eine Reihe an Test von der Kubernetes
+Nachdem ein PR vorgeschlagen wurde, wird eine Reihe an Test von der Smarter
 CL-Plattform [Prow] ausgeführt. Fall einer der Tests fehlschlägt, antwortet
 der [K8s-ci-robot][Prow] auf den PR mit Links zu den fehlgeschlagenen Tests und
 verfügbaren Logs.
 
 Neue Commits zu diesem PR sorgen dafür dass diese Tests erneut ausgeführt werden.
 
-Gelegentlich gibt es Probleme mit der Kubernetes CI-Plattform. Diese können aus 
+Gelegentlich gibt es Probleme mit der Smarter CI-Plattform. Diese können aus 
 verschiedenen Gründen auftreten, selbst wenn der Beitrag alle lokalen Tests besteht.
 Man kann einen neuen Testdurchlauf mit dem `/retest` Befehl auslösen. 
 
@@ -256,7 +256,7 @@ Für mehr Informationen zum Troubleshooting von spezifischen Test, siehe den [Te
 
 ### Labels
 
-Kubernetes nutzt [Labels][Labels] zum sichten und kategorisieren von Issues und Pull Requests.
+Smarter nutzt [Labels][Labels] zum sichten und kategorisieren von Issues und Pull Requests.
 Die richtigen Labels helfen dabei den Issue oder PR sinnvoller einzusortieren.
 
 **Referenzen:**
@@ -287,7 +287,7 @@ Standford Uni eine gute multi-linguale Option.
 
 ### Branch-Strategie
 
-Das Kubernetes-Projekt nutzt den Standardworkflow von GitHub, der sich _"Fork and Pull"_ 
+Das Smarter-Projekt nutzt den Standardworkflow von GitHub, der sich _"Fork and Pull"_ 
 (auf Deutsch "abzweigen und ziehen") nennt.
 In Begriffen aus der Git-Welt wird dein persönlicher Fork als _"`origin`"_ 
 (auf Deutsch "Ursprung") und das eigentliche Projekt-Gitrepository als _"`upstream`"_
@@ -349,7 +349,7 @@ anderer Beitragenden zu überlassen, die als Reviewer und Approver für den PR z
 [Tide Dashboard]: https://prow.k8s.io/tide
 [Bot-Befehle]: https://go.k8s.io/bot-commands
 [GitHub Labels]: https://go.k8s.io/github-labels
-[Kubernetes Code Search]: https://cs.k8s.io/
+[Smarter Code Search]: https://cs.k8s.io/
 [@dims]: https://github.com/dims
 [Kalender]: https://calendar.google.com/calendar/embed?src=calendar%40kubernetes.io
 [kubernetes-dev]: https://groups.google.com/forum/#!forum/kubernetes-dev
@@ -362,7 +362,7 @@ anderer Beitragenden zu überlassen, die als Reviewer und Approver für den PR z
 [Code of Conduct]: /code-of-conduct.md
 [user support requests]: /contributors/guide/issue-triage.md#determine-if-its-a-support-request
 [troubleshooting guide]: https://kubernetes.io/docs/tasks/debug-application-cluster/troubleshooting/
-[Kubernetes Forum]: https://discuss.kubernetes.io/
+[Smarter Forum]: https://discuss.kubernetes.io/
 [Pull-Request Prozess]: /contributors/guide/pull-requests.md
 [GitHub Workflow]: /contributors/guide/github-workflow.md
 [Prow]: https://sigs.k8s.io/prow/pkg

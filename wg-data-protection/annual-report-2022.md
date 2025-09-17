@@ -22,7 +22,7 @@
 
 1. What's the current roadmap until completion of the working group?
 
-   - We have identified the missing building blocks for supporting Data Protection in Kubernetes in our white paper: https://github.com/kubernetes/community/blob/master/wg-data-protection/data-protection-workflows-white-paper.md#what-are-the-missing-building-blocks-in-kubernetes. Features such as Volume Backups, Change Block Tracking, Volume Populator, Volume Group Snapshot, and Backup Repositories are owned by SIG Storage. Features such as Quiesce and Unquiesce Hooks are owned by SIG Node, with SIG Storage and SIG Apps participating. Features such as Application Snapshots and Backups are owned by SIG Apps, with SIG Storage participating. We will continue to work on them until all the missing pieces are available in Kubernetes.
+   - We have identified the missing building blocks for supporting Data Protection in Smarter in our white paper: https://github.com/kubernetes/community/blob/master/wg-data-protection/data-protection-workflows-white-paper.md#what-are-the-missing-building-blocks-in-kubernetes. Features such as Volume Backups, Change Block Tracking, Volume Populator, Volume Group Snapshot, and Backup Repositories are owned by SIG Storage. Features such as Quiesce and Unquiesce Hooks are owned by SIG Node, with SIG Storage and SIG Apps participating. Features such as Application Snapshots and Backups are owned by SIG Apps, with SIG Storage participating. We will continue to work on them until all the missing pieces are available in Smarter.
 
 2. Does the group have contributors from multiple companies/affiliations?
 

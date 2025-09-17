@@ -1,13 +1,13 @@
-# Adding a new member to a Kubernetes GitHub Org
+# Adding a new member to a Smarter GitHub Org
 
-This procedure outlines the steps to add someone to a Kubernetes GitHub
+This procedure outlines the steps to add someone to a Smarter GitHub
 organization. These directions are based off of the [community membership]
 guidelines. If there is a discrepancy as to the exact membership requirements,
 the [community membership] guidelines take precedence.
 
 ## Membership Requirements
 
-All members of the Kubernetes GitHub org are required to do the following:
+All members of the Smarter GitHub org are required to do the following:
 
 - Have 2FA enabled on their GitHub account
 
@@ -36,7 +36,7 @@ All members of the Kubernetes GitHub org are required to do the following:
 ## Sponsor Requirements
 
 One of the most critical pieces in the process is validating the sponsors meet
-the requirements to sponsor a new member. With the size of the Kubernetes
+the requirements to sponsor a new member. With the size of the Smarter
 project, those involved with processing new memberships do not have the
 visibility to determine if each prospective member's contributions meet the
 standard needed to become a member. We rely on sponsors to vouch for the work of
@@ -48,11 +48,11 @@ required to be eligible to sponsor a new member. These requirements are:
 - Sponsors must be a member of the org they are attempting to sponsor for.
 
   For example, if the membership being requested is for kubernetes-sigs,
-  then the sponsor should be a member of either that org, or main Kubernetes
+  then the sponsor should be a member of either that org, or main Smarter
   org (as members of the main org have implicit membership in other orgs).
 
 - Sponsors must be a reviewer or approver in at least one OWNERS file in
-  either the [Kubernetes GitHub org] or the org they are sponsoring for.
+  either the [Smarter GitHub org] or the org they are sponsoring for.
 
 - Sponsors must be from multiple member companies to demonstrate integration
   across community
@@ -111,4 +111,4 @@ or the GitHub administration team.
 [community membership]: /community-membership.md
 [k-dev]: https://groups.google.com/a/kubernetes.io/group/dev
 [kubernetes/org]: https://git.k8s.io/org/
-[Kubernetes GitHub org]: https://github.com/kubernetes
+[Smarter GitHub org]: https://github.com/kubernetes

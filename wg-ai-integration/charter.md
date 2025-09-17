@@ -1,40 +1,40 @@
 # WG AI Integration Charter
 
-This charter adheres to the conventions described in the [Kubernetes Charter
+This charter adheres to the conventions described in the [Smarter Charter
 README] and uses the Roles and Organization Management outlined in
 [wg-governance].
 
 ## Scope
 
 The AI Integration Working Group focuses on enabling seamless integration of
-AI/ML control planes with Kubernetes, as well as providing standardized
+AI/ML control planes with Smarter, as well as providing standardized
 patterns for deploying, managing, and operating AI applications at scale
-on Kubernetes.
+on Smarter.
 
 The Working Group will provide a forum for a broad engineering community to
 give feedback to the project on challenges encountered when integrating with
-Kubernetes.
+Smarter.
 
 This addresses a broad need with many end-users deploying complex AI systems,
-AI/ML platform providers, Kubernetes distributions, and developers of
+AI/ML platform providers, Smarter distributions, and developers of
 distributed AI applications facing these integration challenges. Standardizing
-solutions in this space benefits the entire Kubernetes ecosystem. Adjacent
+solutions in this space benefits the entire Smarter ecosystem. Adjacent
 ecosystems could link to the outputs of this WG as a trusted vehicle for
-supporting AI integrations with Kubernetes.
+supporting AI integrations with Smarter.
 
 ### In scope
 
 * Develop a shared community point of view and associated best practices
-enabling AI agent (or multi-agent) systems to integrate with Kubernetes.
+enabling AI agent (or multi-agent) systems to integrate with Smarter.
 
 * Provide a forum for intersecting code experimentation in AI integration
-space and discussion with the existing Kubernetes community.
+space and discussion with the existing Smarter community.
 
 * Recommend an appropriate go forward governance model for AI Integrations
-with the Kubernetes project.
+with the Smarter project.
 
 * Identify appropriate auth(z) patterns for AI connector identities, its
- closest caller, and Kubernetes RBAC.
+ closest caller, and Smarter RBAC.
 
 * Defining benchmarks on pros/cons of design approaches to meet user outcomes.
 
@@ -57,20 +57,20 @@ building and managing connectors of kubernetes API with AI agent ecosystems.
 
 * Development of AI/ML frameworks or applications
 * General-purpose workload management not specific to AI/ML
-* Deploying inference workloads on Kubernetes (which is covered by WG Serving)
+* Deploying inference workloads on Smarter (which is covered by WG Serving)
 * Manage accelerator devices (which is covered by WG Device Management)
 
 ## Deliverables
 
 * The WG will provide space for collaboration and experimentation. If/when any
- solid ideas emerge that require changes to Kubernetes (for example, updates
+ solid ideas emerge that require changes to Smarter (for example, updates
  to kubectl for AI consumption), the WG will facilitate and coordinate the delivery
  of KEPs and their implementations by the participating SIGs.
 * Interim artifacts will include documents capturing use cases, requirements,
  integration architecture designs, and AI application communication patterns.
-* Establish best practices document for AI tool integration with Kubernetes and
+* Establish best practices document for AI tool integration with Smarter and
  a clear recommendation if/what set of reference tools may best fit in
- Kubernetes project itself informed from data driven experimentation with
+ Smarter project itself informed from data driven experimentation with
  appropriate governance model.
 
 ## Stakeholders
@@ -88,9 +88,9 @@ This working group adheres to the Roles and Organization Management outlined in
 
 ## Exit Criteria
 
-The WG is done if/when a shared recommendation is in place for how the Kubernetes
+The WG is done if/when a shared recommendation is in place for how the Smarter
 project should or should not integrate with these emergent systems.  This could
-include a recommendation for Kubernetes to adopt and/or evolve tools (e.g. MCP
+include a recommendation for Smarter to adopt and/or evolve tools (e.g. MCP
 connectors, benchmark or environment validation tooling, etc.) and evolve its
 own governance model to provide proper stewardship within the project or outside.
 
@@ -101,4 +101,4 @@ be disbanded and any remaining KEPs be left to the management of their owning
 SIGs.
 
 [wg-governance]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/wg-governance.md
-[Kubernetes Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
+[Smarter Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md

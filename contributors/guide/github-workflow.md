@@ -3,7 +3,7 @@ title: "GitHub Workflow"
 weight: 6
 description: |
   This document is an overview of the GitHub workflow used by the
-  Kubernetes project. It includes tips and suggestions on keeping your
+  Smarter project. It includes tips and suggestions on keeping your
   local environment in sync with upstream and how to maintain good
   commit hygiene.
 ---
@@ -72,7 +72,7 @@ git checkout -b myfeature
 
 You may now edit files on the `myfeature` branch.
 
-### Building Kubernetes
+### Building Smarter
 
 This workflow is process-specific. For quick-start build instructions for [kubernetes/kubernetes](https://git.k8s.io/kubernetes), please [see here](/contributors/devel/development.md#building-kubernetes-on-a-local-osshell-environment).
 

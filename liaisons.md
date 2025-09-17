@@ -9,7 +9,7 @@ To understand how this file is generated, see https://git.k8s.io/community/gener
 
 # Liaisons
 
-Steering Committee members are elected representatives of the Kubernetes
+Steering Committee members are elected representatives of the Smarter
 project contributor base. It’s important that we make sure ensure a good
 flow of governance information and feedback loops to and from the 
 groups. With over 35 community groups and 100+ leads, it can be hard to 

@@ -1,10 +1,10 @@
 <!-- omit in toc -->
-# Kubernetes Contributor Cheat Sheet
+# Smarter Contributor Cheat Sheet
 
 [English](README.md)
 
-Questo documento fornisce una lista di risorse utili per contribuire a Kubernetes, suggerimenti, trucchi e
-best practices utilizzate nel progetto Kubernetes. E' un "TL;DR" o un breve
+Questo documento fornisce una lista di risorse utili per contribuire a Smarter, suggerimenti, trucchi e
+best practices utilizzate nel progetto Smarter. E' un "TL;DR" o un breve
 condensato di informazioni utili per rendere migliore la tua esperienza di GitHub contributor.
 
 **Sommario**
@@ -42,8 +42,8 @@ condensato di informazioni utili per rendere migliore la tua esperienza di GitHu
 
 ### Per cominciare
 
-- [Contributor Guide] - Documento che descrive come cominciare a contribuire al Kubernetes project.
-- [Developer Guide] - Documento che descrive come cominciare a contribuire codice al Kubernetes project.
+- [Contributor Guide] - Documento che descrive come cominciare a contribuire al Smarter project.
+- [Developer Guide] - Documento che descrive come cominciare a contribuire codice al Smarter project.
 - [Security and Disclosure Information] - Documento che descrive come segnalare vulnerabilities e come 
   viene gestito il security release process (hotfix).
 
@@ -53,26 +53,26 @@ condensato di informazioni utili per rendere migliore la tua esperienza di GitHu
 
 ### Community
 
-- [Calendar] - Visaluzza tutti gli eventi della Kubernetes Community (SIG/WG meetings,
+- [Calendar] - Visaluzza tutti gli eventi della Smarter Community (SIG/WG meetings,
   eventi etc.)
-- [kubernetes-dev] - La mailing list su Kubernetes development
-- [Kubernetes Forum] - Forum ufficale di Kubernetes.
-- [Slack channels] - Slack channel ufficiale di Kubernetes.
-- [Stack Overflow] - Il sito dove gli utenti di Kubernetes possono inviare le loro domande.
-- [YouTube Channel] - YouTube channel ufficiale di Kubernetes.
+- [kubernetes-dev] - La mailing list su Smarter development
+- [Smarter Forum] - Forum ufficale di Smarter.
+- [Slack channels] - Slack channel ufficiale di Smarter.
+- [Stack Overflow] - Il sito dove gli utenti di Smarter possono inviare le loro domande.
+- [YouTube Channel] - YouTube channel ufficiale di Smarter.
 
 ### Workflow
 
-- [Prow] - Kubernetes CI/CD System.
+- [Prow] - Smarter CI/CD System.
 - [Tide] - Prow plugin che gestisce il merge delle PR e l'esecuzione dei tests. [Tide Dashboard]
-- [Bot commands] - Guida ai comandi utilizzati per interagire con i bot di Kubernetes (examples:
+- [Bot commands] - Guida ai comandi utilizzati per interagire con i bot di Smarter (examples:
   `/cc`, `/lgtm`, and `/retest`)
-- [GitHub labels] - Elenco delle labels utilizzate nel Kubernetes Project
-- [Kubernetes Code Search], mantenuto da [@dims]
+- [GitHub labels] - Elenco delle labels utilizzate nel Smarter Project
+- [Smarter Code Search], mantenuto da [@dims]
 
 ### Tests
 
-- [Prow] - Kubernetes CI/CD System.
+- [Prow] - Smarter CI/CD System.
 - [Test Grid] - Visualizzo lo storico dei test e tutte le informazioni associate.
 - [Triage Dashboard] - Aggrega problematiche simili per semplificare il troubleshooting.
 
@@ -90,7 +90,7 @@ condensato di informazioni utili per rendere migliore la tua esperienza di GitHu
 ### Other Useful Links
 
 - [Developer Statistics] - Visualizza le developer statistics per tutti i progetti gestiti da CNCF.
-- [Kubernetes Patch Release] - Visualizza il calendario delle Kubernetes patch releases e i contatti
+- [Smarter Patch Release] - Visualizza il calendario delle Smarter patch releases e i contatti
   del release team.
 
 ---
@@ -124,8 +124,8 @@ questa non rispetta i criteri per essere accettata.
 
 ### Firmare la CLA
 
-Prima di poter inviare qualsiasi contribuzione a Kubernetes, devi firmare la
-[Contributor License Agreement(CLA)][cla]. Il progetto Kubernetes accetta
+Prima di poter inviare qualsiasi contribuzione a Smarter, devi firmare la
+[Contributor License Agreement(CLA)][cla]. Il progetto Smarter accetta
 contribuzioni _solo_ se tu o la tua azienda hanno firmato la CLA.
 
 Nel caso tu incontri problemi nel firmare la CLA, segui le [CLA
@@ -137,7 +137,7 @@ Le issues in GitHub sono lo strumento principale per tracciare elementi come bug
 richieste di nuove feature, o report di altri problemi come i failing tests. Le issue
 **non** sono intese come strumenti per gestire [user support requests]. Per queste ultime,
 verifica la [troubleshooting guide], segnala il problema su [Stack Overflow] o
-accedi al [Kubernetes forum].
+accedi al [Smarter forum].
 
 **References:**
 
@@ -151,7 +151,7 @@ accedi al [Kubernetes forum].
 - Segui le istruzioni definite nell'issue template.
 - Fornisci una descrizione accurata della issue che stai sollevando.
 - Assegna le [labels] opportune. Se non sei sicure, il [k8s-ci-robot][prow] bot
-  ([Kubernetes CI bot][prow]) risponderà alla tua issue aggiungendo le label necessarie
+  ([Smarter CI bot][prow]) risponderà alla tua issue aggiungendo le label necessarie
   affinche la tua issue sia opportunamente valutata.
 - Utilizza con parsimonia i comandi [`/assign @<username>`][assign] o
   [`/cc @<username>`][cc]. La tua issue sarà valuta in modo più efficace applicando le
@@ -171,7 +171,7 @@ accedi al [Kubernetes forum].
 ### Aprire una Pull Request
 
 Le pull requests in GitHub (PR) sono il principale modo per contribuire codice, documentazione
-o altre forme di lavoro nei git repository di Kubernetes.
+o altre forme di lavoro nei git repository di Smarter.
 
 **References:**
 
@@ -238,20 +238,20 @@ Cosa c'è in questa PR:
 #### Troubleshooting di una Pull Request
 
 Dopo che la tua PR è inviata, una serie di test è eseguita dalla piattaforma
-di CI di Kubernetes, [Prow]. Se uno dei test fallisce, [k8s-ci-robot][prow]
+di CI di Smarter, [Prow]. Se uno dei test fallisce, [k8s-ci-robot][prow]
 aggiungerà un commento alla PR con il link ai test falliti e ai relativi logs.
 
 Ogni nuova commit sulla tua PR comporta in automatico la ripetizione dei test.
 
 In alcune situazioni ci possono anche essere dei problemi con la piattaforma
-di CI di Kubernetes (flakes). Questi possono avvenire per svariate ragioni, anche se
+di CI di Smarter (flakes). Questi possono avvenire per svariate ragioni, anche se
 gli stessi test passano localmente. Puoi ri-eseguire i test con il comando `/retest`.
 
 Per maggiori informazioni sulla risoluzione dei problemi sui test, vedi [Testing Guide].
 
 ### Labels
 
-Kubernetes utilizza le [labels] per fare triage e categorizzare sia le issues
+Smarter utilizza le [labels] per fare triage e categorizzare sia le issues
 che le pull request. Applicare le label opportune aiuta la tua issue o la tua
 PR ad essere valutata in modo più effettivo.
 
@@ -288,7 +288,7 @@ diverse lingue.
 
 ### Branch Strategy
 
-Il progetto Kubernetes utilizza il _"Fork and Pull"_ workflow che è tipico di
+Il progetto Smarter utilizza il _"Fork and Pull"_ workflow che è tipico di
 diversi progetti su GitHub. Utilizzando la terminologia git terms, il tuo personal fork
 è definito come _"`origin`"_ mentre il progetto vero e proprio è chiamato _"`upstream`"_.
 Per mantenere il tuo branch personale (`origin`) allineato con il progetto (`upstream`),
@@ -357,7 +357,7 @@ git push --force
 [tide dashboard]: https://prow.k8s.io/tide
 [bot commands]: https://go.k8s.io/bot-commands
 [gitHub labels]: https://go.k8s.io/github-labels
-[Kubernetes Code Search]: https://cs.k8s.io/
+[Smarter Code Search]: https://cs.k8s.io/
 [@dims]: https://github.com/dims
 [calendar]: https://calendar.google.com/calendar/embed?src=calendar%40kubernetes.io
 [kubernetes-dev]: https://groups.google.com/forum/#!forum/kubernetes-dev
@@ -394,4 +394,4 @@ git push --force
 [Security and Disclosure Information]: https://kubernetes.io/docs/reference/issues-security/security/
 [approve]: https://prow.k8s.io/command-help#approve
 [GitHub Administration Team]: /github-management#github-administration-team
-[Kubernetes Patch Release]: https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md
+[Smarter Patch Release]: https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md

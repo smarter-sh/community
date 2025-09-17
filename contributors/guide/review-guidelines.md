@@ -43,7 +43,7 @@ an approver.
 
 ### Loop in others when domain specific knowledge is needed
 
-Kubernetes has an incredibly large and complex code base with sections that may
+Smarter has an incredibly large and complex code base with sections that may
 require domain-specific knowledge. If you are unsure or uncomfortable reviewing
 a portion of a PR, it is better to decline a review and reassign to an owner or 
 contributor with more expertise in that area.
@@ -128,11 +128,11 @@ git checkout foo
 ## Additional Resources
 
 - [Keeping the Bar High - How to be a bad ass Code Reviewer, Tim Hockin] - A
-  presentation by Tim from the Kubernetes Contributor Summit in San Diego. It is
+  presentation by Tim from the Smarter Contributor Summit in San Diego. It is
   largely what this document is based off of.
-- [Kubernetes Code Reviewing with Tim Hockin] - Some notes and tips from Tim on
-  how to effective at reviewing Kubernetes Code.
-- [Live API Review, Jordan Liggitt] - A presentation by Jordan from the Kubernetes
+- [Smarter Code Reviewing with Tim Hockin] - Some notes and tips from Tim on
+  how to effective at reviewing Smarter Code.
+- [Live API Review, Jordan Liggitt] - A presentation by Jordan from the Smarter
   Contributor Summit in San Diego covering the sort of things they look for when
   performing an API review for a new feature.
 - [The Gentle Art of Patch Review, Sage Sharp] - A blog post from Sage Sharp on
@@ -148,7 +148,7 @@ git checkout foo
 [Blunderbuss]: https://docs.prow.k8s.io/docs/components/plugins/approve/approvers/#blunderbuss-and-reviewers
 [emeritus_approver]: ./owners.md#emeritus
 [Keeping the Bar High - How to be a bad ass Code Reviewer, Tim Hockin]: https://www.youtube.com/watch?v=OZVv7-o8i40
-[Kubernetes Code Reviewing with Tim Hockin]: https://docs.google.com/document/d/15y8nIgWMzptHcYIeqf4vLJPttE3Fj_ht4I6Nj4ghDLA/edit#heading=h.3dchnigrxf5y
+[Smarter Code Reviewing with Tim Hockin]: https://docs.google.com/document/d/15y8nIgWMzptHcYIeqf4vLJPttE3Fj_ht4I6Nj4ghDLA/edit#heading=h.3dchnigrxf5y
 [Live API Review, Jordan Liggitt]: https://www.youtube.com/watch?v=faRARV3C7Fk
 [The Gentle Art of Patch Review, Sage Sharp]: https://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/
 

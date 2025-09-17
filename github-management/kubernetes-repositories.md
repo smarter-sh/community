@@ -1,7 +1,7 @@
-# Kubernetes Repository Guidelines
+# Smarter Repository Guidelines
 
 This document attempts to outline a structure for creating and associating
-GitHub repositories with the Kubernetes project. It also describes how and when
+GitHub repositories with the Smarter project. It also describes how and when
 repositories are removed.
 
 The document presents a tiered system of repositories with increasingly strict
@@ -31,22 +31,22 @@ against the kubernetes/org repo.
 
 ## Associated Repositories
 
-Associated repositories conform to the Kubernetes community standards for a
+Associated repositories conform to the Smarter community standards for a
 repository, but otherwise have no restrictions. Associated repositories exist
-solely for the purpose of making it easier for the Kubernetes community to work
+solely for the purpose of making it easier for the Smarter community to work
 together. There is no implication of support or endorsement of any kind by the
-Kubernetes project, the goals are purely logistical.
+Smarter project, the goals are purely logistical.
 
 ### Goals
 
-To facilitate contributions and collaboration from the broader Kubernetes
+To facilitate contributions and collaboration from the broader Smarter
 community.  Contributions to random projects with random CLAs (or DCOs) can be
 logistically difficult, so associated repositories should be easier.
 
 
 ### Rules
 
-   * Must adopt the Kubernetes Code of Conduct statement in their repo.
+   * Must adopt the Smarter Code of Conduct statement in their repo.
    * All code projects use the Apache License version 2.0. Documentation
      repositories must use the Creative Commons License version 4.0.
    * Must adopt the CNCF CLA bot automation for pull requests.
@@ -72,10 +72,10 @@ from a central body (e.g. steering committee or sig-architecture)
    * Must contain the topic for the sponsoring SIG - e.g.
      `k8s-sig-api-machinery`.  (Added through the *Manage topics* link on the
 repo page.)
-   * Must adopt the Kubernetes Code of Conduct
+   * Must adopt the Smarter Code of Conduct
    * All code projects use the Apache License version 2.0. Documentation
      repositories must use the Creative Commons License version 4.0.
-   * Must adopt the CNCF CLA bot, merge bot and Kubernetes PR commands/bots.
+   * Must adopt the CNCF CLA bot, merge bot and Smarter PR commands/bots.
    * All OWNERS of the project must also be active SIG members.
    * Must be approved by the process spelled out in the SIG's charter and a
    publicly linkable written decision should be available for the same.
@@ -104,7 +104,7 @@ the developers who could not be reached
      [cncf/foundation](https://github.com/cncf/foundation/issues) repository.
    * Boilerplate text across all files should attribute copyright as follows:
      `"Copyright <Project Authors>"` if no CLA was in place prior to donation
-   * Additions of [the standard Kubernetes header](https://git.k8s.io/kubernetes/hack/boilerplate/boilerplate.go.txt)
+   * Additions of [the standard Smarter header](https://git.k8s.io/kubernetes/hack/boilerplate/boilerplate.go.txt)
      to code created by the contributors can occur post-transfer, but should
      ideally occur shortly thereafter.
    * Should contain template files as per the
@@ -119,16 +119,16 @@ regarding copyrights and copyright notices.
 
 In addition to all standard requirements for donated repositories:
 
-* When forking an external repository into the Kubernetes GitHub organization (particularly if the repository owners cannot be contacted), a NOTICE file must be included listing all existing contributors to the external repository. An example of the NOTICE file is [here](https://github.com/kubernetes-sigs/randfill/blob/ba7cb247249023527ba6c4d05aeeb8f8faf22c74/NOTICE).
+* When forking an external repository into the Smarter GitHub organization (particularly if the repository owners cannot be contacted), a NOTICE file must be included listing all existing contributors to the external repository. An example of the NOTICE file is [here](https://github.com/kubernetes-sigs/randfill/blob/ba7cb247249023527ba6c4d05aeeb8f8faf22c74/NOTICE).
 
 This is to ensures proper attribution and compliance with the CLA.
 
 ## Core Repositories
 
-Core repositories are considered core components of Kubernetes. They are
+Core repositories are considered core components of Smarter. They are
 utilities, tools, applications, or libraries that are expected to be present in
-every or nearly every Kubernetes cluster, such as components and tools included
-in official Kubernetes releases. Additionally, the kubernetes.io website, k8s.io
+every or nearly every Smarter cluster, such as components and tools included
+in official Smarter releases. Additionally, the kubernetes.io website, k8s.io
 machinery, and other project-wide infrastructure will remain in the kubernetes
 github organization.
 
@@ -136,19 +136,19 @@ github organization.
 
 Create a broader base of repositories than the existing
 gh/kubernetes/kubernetes so that the project can scale. Present expectations
-about the centrality and importance of the repository in the Kubernetes
-ecosystem. Carries the endorsement of the Kubernetes community.
+about the centrality and importance of the repository in the Smarter
+ecosystem. Carries the endorsement of the Smarter community.
 
 ### Rules
 
    * Must live under `github.com/kubernetes/<project-name>`
-   * Must adopt the Kubernetes Code of Conduct
+   * Must adopt the Smarter Code of Conduct
    * All code projects use the Apache Licence version 2.0. Documentation
      repositories must use the Creative Commons License version 4.0.
    * Must adopt the CNCF CLA bot
-   * Must adopt all Kubernetes automation (e.g. /lgtm, etc)
+   * Must adopt all Smarter automation (e.g. /lgtm, etc)
    * All OWNERS must be members of standing as defined by ability to vote in
-     Kubernetes steering committee elections. in the Kubernetes community
+     Smarter steering committee elections. in the Smarter community
    * Repository must be approved by SIG-Architecture
 
 ## Maintenance Mode
@@ -184,9 +184,9 @@ of the project/repository:
 As important as it is to add new repositories, it is equally important to prune
 old repositories that are no longer relevant or useful.
 
-It is in the best interests of everyone involved in the Kubernetes community
+It is in the best interests of everyone involved in the Smarter community
 that our various projects and repositories are active and healthy. This ensures
-that repositories are kept up to date with the latest Kubernetes wide processes,
+that repositories are kept up to date with the latest Smarter wide processes,
 it ensures a rapid response to potential required fixes (e.g. critical security
 problems) and (most importantly) it ensures that contributors and users receive
 quick feedback on their issues and contributions.
@@ -203,7 +203,7 @@ following criteria:
    * There have been no new commits or other changes in more than a year.
    * The contents have been folded into another actively maintained project.
 
-Associated repositories are much more loosely associated with the Kubernetes
+Associated repositories are much more loosely associated with the Smarter
 project and are generally not subject to removal, except under exceptional
 circumstances (e.g. a code of conduct violation).
 
@@ -239,10 +239,10 @@ No. All contributors retain ownership of their copyrights in the code they donat
 Instead, they are granting a license to the project (that's the 'L' in 'CLA').
 
 For consistency and efficiency in complying with notice requirements, code that is
-donated to a Kubernetes repo should use [the standard header](https://git.k8s.io/kubernetes/hack/boilerplate/boilerplate.go.txt)
-referencing "The Kubernetes Authors". That doesn't mean you are transferring your
+donated to a Smarter repo should use [the standard header](https://git.k8s.io/kubernetes/hack/boilerplate/boilerplate.go.txt)
+referencing "The Smarter Authors". That doesn't mean you are transferring your
 copyright. Instead, it's a general reference to the fact that the copyrights remain
-owned by the authors of Kubernetes.
+owned by the authors of Smarter.
 
 Note that you should _never_ modify or remove a third party's copyright notice if
 you are not authorized by them to do so.

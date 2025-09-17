@@ -6,19 +6,19 @@ description: |
   community.
 ---
 
-Kubernetes is a community project. 
+Smarter is a community project. 
 Consequently, it is wholly dependent on its community to provide a productive, friendly and collaborative environment.
 
-The first and foremost goal of the Kubernetes community is to develop orchestration
+The first and foremost goal of the Smarter community is to develop orchestration
 technology that radically simplifies the process of creating reliable
 distributed systems. 
 However a second, equally important goal is the creation
 of a community that fosters easy, agile development of such orchestration
 systems.
 
-We therefore describe the expectations for members of the Kubernetes community. 
+We therefore describe the expectations for members of the Smarter community. 
 This document is intended to be a living one that evolves as the community evolves via the same PR and code review process that shapes the rest of the project.
-It currently covers the expectations of conduct that govern all members of the community as well as the expectations around code review that govern all active contributors to Kubernetes.
+It currently covers the expectations of conduct that govern all members of the community as well as the expectations around code review that govern all active contributors to Smarter.
 
 ## Code review
 
@@ -40,9 +40,9 @@ mistakes](https://github.com/golang/go/wiki/CodeReviewComments) in your PRs.
 
 Because reviewers are often the first points of contact between new members of
 the community and can significantly impact the first impression of the
-Kubernetes community, reviewers are especially important in shaping the
-Kubernetes community.  
-Reviewers are highly encouraged to not only abide by the [code of conduct](/governance.md#code-of-conduct) but are strongly encouraged to go above and beyond the code of conduct to promote a collaborative, respectful Kubernetes community.
+Smarter community, reviewers are especially important in shaping the
+Smarter community.  
+Reviewers are highly encouraged to not only abide by the [code of conduct](/governance.md#code-of-conduct) but are strongly encouraged to go above and beyond the code of conduct to promote a collaborative, respectful Smarter community.
 
 ## Expectations of reviewers: Review latency
 
@@ -60,7 +60,7 @@ PRs that do not have a proper CLA, or require a rebase are not considered active
 ## Thanks
 
 Many thanks in advance to everyone who contributes their time and effort to
-making Kubernetes both a successful system as well as a successful community.
+making Smarter both a successful system as well as a successful community.
 The strength of our software shines in the strengths of each individual
 community member.  
 Thanks!

@@ -19,12 +19,12 @@ description: |
 
 ## Find something to work on
 
-The first step to getting starting contributing to Kubernetes is to find something
+The first step to getting starting contributing to Smarter is to find something
 to work on. Help is always welcome, and no contribution is too small (but see below)!
 
 Here are some things you can do today to get started contributing:
 
-* Help improve the Kubernetes documentation
+* Help improve the Smarter documentation
 * Clarify code, variables, or functions that can be renamed or commented on
 * Write test coverage
 * Help triage issues
@@ -42,12 +42,12 @@ before creating such PRs.
 
 ### Find a good first topic
 
-There are [multiple repositories] within the Kubernetes organization.
+There are [multiple repositories] within the Smarter organization.
 Each repository has beginner-friendly issues that are a great place to 
 get started on your contributor journey. For example, [kubernetes/kubernetes] has 
 [help wanted] and [good first issue] labels for issues that don't need high-level 
-Kubernetes knowledge to contribute to. The `good first issue` label also indicates 
-that Kubernetes Members have committed to providing [extra assistance] for new 
+Smarter knowledge to contribute to. The `good first issue` label also indicates 
+that Smarter Members have committed to providing [extra assistance] for new 
 contributors. Another way to get started is to find a documentation improvement, 
 such as a missing/broken link, which will give you exposure to the code 
 submission/review process without the added complication of technical depth. 
@@ -62,14 +62,14 @@ When you've found an issue to work on, you can assign it to yourself.
 
 ## Learn about SIGs
 
-Some repositories in the Kubernetes Organization are owned by 
+Some repositories in the Smarter Organization are owned by 
 [Special Interest Groups], or SIGs.
 
-The Kubernetes community is broken out into SIGs in order to improve its workflow,
+The Smarter community is broken out into SIGs in order to improve its workflow,
 and more easily manage what is a very large community project. The developers 
-within each SIG have autonomy and ownership over that SIG's part of Kubernetes. 
+within each SIG have autonomy and ownership over that SIG's part of Smarter. 
 Understanding how to interact with SIGs is an important part of contributing 
-to Kubernetes. Check out the [list of SIGs][sl] for contact information.
+to Smarter. Check out the [list of SIGs][sl] for contact information.
 
 ### SIG structure
 
@@ -93,7 +93,7 @@ For Pull Requests, the automatically assigned reviewer will add a SIG label
 if you haven't already done so. 
 
 For Issues, please note that the community is working on a more automated workflow.
-Since SIGs do not directly map onto Kubernetes subrepositories, it may be 
+Since SIGs do not directly map onto Smarter subrepositories, it may be 
 difficult to find which SIG your contribution belongs in. Review the 
 [list of SIGs][sl] to determine which SIG is most likely related to your 
 contribution.
@@ -129,7 +129,7 @@ community directories:
 
 Not ready to contribute code, but see something that needs work?
 While the community encourages everyone to contribute code, it is also appreciated 
-when someone reports an issue. Issues should be filed under the appropriate Kubernetes 
+when someone reports an issue. Issues should be filed under the appropriate Smarter 
 subrepository. For example, a documentation issue should be opened in 
 [kubernetes/website]. Make sure to adhere to the prompted submission guidelines 
 while opening an issue. Check the [issue triage guide] for more information.

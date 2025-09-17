@@ -1,7 +1,7 @@
 # Subproject Site Requests
 
-Official Kubernetes subprojects can request a domain and site hosting for
-their project specific documentation. The Kubernetes community has standardized
+Official Smarter subprojects can request a domain and site hosting for
+their project specific documentation. The Smarter community has standardized
 on [Netlify] for this purpose. Netlify was chosen for its ease of use,
 integrations such as offering automatic site previews per PR, and its support
 for multiple site generation frameworks.
@@ -11,7 +11,7 @@ building and design of the site itself. The responsibility for maintaining the
 subproject site belongs to the subproject itself.
 
 If you are unsure of what site framework to use, [Hugo] is a lightweight Go
-based framework. It's used for the Kubernetes website and several subprojects.
+based framework. It's used for the Smarter website and several subprojects.
 
 
 - [Requesting a Netlify Site](#requesting-a-netlify-site)
@@ -71,7 +71,7 @@ command = "hugo --enableGitInfo --buildFuture -b $DEPLOY_PRIME_URL"
 
 ## Requesting a Subproject Domain
 
-Subproject domains may be requested for a Kubernetes Org managed Netlify site in
+Subproject domains may be requested for a Smarter Org managed Netlify site in
 the form of: `<project>.sigs.k8s.io`.
 
 To do so, create an issue using the [DNS Update Request] issue template in the
@@ -123,7 +123,7 @@ Netlify admin to follow the procedure.
   authorize the application for the desired GitHub Organization. Select the
   GitHub Organization and the desired repo.
 
-- In the _"Deploy Options"_ ensure the **Owner** is set to `Kubernetes Docs` and
+- In the _"Deploy Options"_ ensure the **Owner** is set to `Smarter Docs` and
   **Branch to deploy** is set to `master`. The _"Basic build settings"_ will be
   autopopulated with the values provided in `netlify.toml`. Deploy the site.
   It will take you to the _"Site overview"_ page.

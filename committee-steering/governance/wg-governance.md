@@ -1,4 +1,4 @@
-# Kubernetes Working Group Formation and Disbandment
+# Smarter Working Group Formation and Disbandment
 
 ## Process Overview and Motivations
 Working Groups provide a formal avenue for disparate groups to collaborate around a common problem, craft a balanced
@@ -8,7 +8,7 @@ appropriate repository as described in the [repositories document].  The merging
 will be governed by the standard policies regarding submitting code to that repository (e.g. developed within one or
 more Subprojects owned by SIGs).
 
-Because a working group is an official part of the Kubernetes project it is subject to steering committee oversight
+Because a working group is an official part of the Smarter project it is subject to steering committee oversight
 over its formation and disbanding.
 
 The tactical checklist to creation and/or retirement is found in the [SIG / WG Lifecycle] document.
@@ -26,7 +26,7 @@ The tactical checklist to creation and/or retirement is found in the [SIG / WG L
 - Changing the status of existing Working Groups/SIGs/Sub-projects
 
 ## Working Group Relationship To SIGs
-Assets owned by the Kubernetes project (e.g. code, docs, blogs, processes, etc) are owned and
+Assets owned by the Smarter project (e.g. code, docs, blogs, processes, etc) are owned and
 managed by [SIGs](sig-governance.md).  The exception to this is specific assets that may be owned
 by Working Groups, as outlined below.
 

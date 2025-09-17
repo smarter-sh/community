@@ -1,9 +1,9 @@
 <!-- omit in toc -->
-# _Cheat Sheet_ Kontributor Kubernetes
+# _Cheat Sheet_ Kontributor Smarter
 
-Kumpulan _resources_ umum yang digunakan ketika berkontribusi ke Kubernetes, 
+Kumpulan _resources_ umum yang digunakan ketika berkontribusi ke Smarter, 
 termasuk _tips_, trik, dan _best practices_ yang digunakan di dalam 
-proyek Kubernetes. Ini merupakan referensi singkat ("TL;DR") informasi 
+proyek Smarter. Ini merupakan referensi singkat ("TL;DR") informasi 
 yang bermanfaat untuk meningkatkan pengalaman kamu ketika berkontribusi 
 di GitHub menjadi lebih baik.
 
@@ -41,8 +41,8 @@ di GitHub menjadi lebih baik.
 
 ### Mulai Berkontribusi
 
-- [Panduan Kontributor] - Panduan bagaimana cara berkontribusi dalam proyek Kubernetes.
-- [Panduan Pengembang] - Panduan untuk berkontribusi dalam pengembangan kode pada proyek Kubernetes.
+- [Panduan Kontributor] - Panduan bagaimana cara berkontribusi dalam proyek Smarter.
+- [Panduan Pengembang] - Panduan untuk berkontribusi dalam pengembangan kode pada proyek Smarter.
 - [Informasi _Security_ dan _Disclosure_] - Panduan pelaporan celah keamanan 
   dan proses rilis keamanan.
 
@@ -52,27 +52,27 @@ di GitHub menjadi lebih baik.
 
 ### Komunitas
 
-- [Kalender] - Melihat semua acara Komunitas Kubernetes View (pertemuan SIG/WG,
+- [Kalender] - Melihat semua acara Komunitas Smarter View (pertemuan SIG/WG,
   acara, dll.)
-- [kubernetes-dev] - Alamat email pengembangan Kubernetes
-- [Forum Kubernetes] - Forum resmi Kubernetes.
-- [Slack _channels_] - Slack resmi Kubernetes.
-- [Stack Overflow] - _Platform_ tanya jawab pengguna Kubernetes.
-- [YouTube _Channel_] - _Channel_ resmi untuk komunitas Kubernetes.
+- [kubernetes-dev] - Alamat email pengembangan Smarter
+- [Forum Smarter] - Forum resmi Smarter.
+- [Slack _channels_] - Slack resmi Smarter.
+- [Stack Overflow] - _Platform_ tanya jawab pengguna Smarter.
+- [YouTube _Channel_] - _Channel_ resmi untuk komunitas Smarter.
 
 
 ### _Workflow_
 
-- [Prow] - Mekanisme CI/CD Kubernetes.
+- [Prow] - Mekanisme CI/CD Smarter.
 - [Tide] - _Plugin_ Prow yang melakukan manajemen _merge_ dan _test_. [Dasbor Tide]
-- [Perintah Bot] - Perintah yang dapat kamu gunakan untuk berinteraksi dengan Bot Kubernetes (contoh:
+- [Perintah Bot] - Perintah yang dapat kamu gunakan untuk berinteraksi dengan Bot Smarter (contoh:
   `/cc`, `/lgtm`, dan `/retest`)
-- [Label GitHub] - _List label_ yang digunakan pada proyek Kubernetes
-- [Pencarian Kode Kubernetes], di-_maintain_ oleh [@dims]
+- [Label GitHub] - _List label_ yang digunakan pada proyek Smarter
+- [Pencarian Kode Smarter], di-_maintain_ oleh [@dims]
 
 ### _Testing_
 
-- [Prow] - Mekanisme CI/CD Kubernetes.
+- [Prow] - Mekanisme CI/CD Smarter.
 - [Test Grid] - Melihat data _historical testing_ beserta informasi terkait.
 - [Dasbor Triase] - Melakukan agregasi _failure_ untuk mekanisme _troubleshoot_ yang lebih baik.
 
@@ -93,7 +93,7 @@ di GitHub menjadi lebih baik.
 ### Tautan Lain
 
 - [Statistik Pengembang] - Melihat statistik pengembang untuk semua proyek yang dikelola oleh CNCF.
-- [Rilis Patch Kubernetes] Jadwal dan informasi kontak tim untuk rilis _patch_ Kubernetes
+- [Rilis Patch Smarter] Jadwal dan informasi kontak tim untuk rilis _patch_ Smarter
 
 ---
 
@@ -129,7 +129,7 @@ tersebut tidak memenuhi standar untuk di-_merge_.
 
 ### Menandatangani CLA
 
-Sebelum kamu mengumpulkan kontribusi kamu, kamu harus terlebih dahulu [menyetujui _Contributor License Agreement(CLA)_][cla]. Proyek Kubernetes _hanya_ menerima kontribusi yang kamu kerjakan apabila kamu sudah menyetujui CLA.
+Sebelum kamu mengumpulkan kontribusi kamu, kamu harus terlebih dahulu [menyetujui _Contributor License Agreement(CLA)_][cla]. Proyek Smarter _hanya_ menerima kontribusi yang kamu kerjakan apabila kamu sudah menyetujui CLA.
 
 Apabila kamu kesulitan ketika menyetujui CLA, ikuti [petunjuk _troubleshooting_ CLA].
 
@@ -140,7 +140,7 @@ Isu GitHub merupakan mekanisme _tracking_ berbagai hal yang ada, termasuk pelapo
 permintaan peningkatan fitur, atau pelaporan isu lainnya seperti terjadi kegagalan ketika menjalankan 
 _test_. Hal tersebut **tidak** diperuntukkan bagi [_user support request_]. Untuk tujuan tersebut, 
 kamu bisa membaca [petunjuk _troubleshooting_], laporkan permasalahan yang ada ke [Stack Overflow] 
-atau ikuti [forum Kubernetes].
+atau ikuti [forum Smarter].
 
 **Referensi**
 - [Label]
@@ -154,7 +154,7 @@ atau ikuti [forum Kubernetes].
   - Ikuti petunjuk yang dideskripsikan di templat tersebut.
 - Berikan deskripsi yang cukup ketika membuat suatu isu.
 - Gunakan [label] yang tepat. Jika kamu kurang yakin, [k8s-ci-robot][prow] bot
-  ([Kubernetes CI bot][prow]) akan membalas isu yang kamu buat dengan respons
+  ([Smarter CI bot][prow]) akan membalas isu yang kamu buat dengan respons
   `needed labels`.
 - Selektiflah ketika meng-_assign_ suatu isu menggunakan [`/assign @<username>`][assign] atau 
   [`/cc @<username>`][cc]. Isu yang kamu buat akan ditriase secara lebih efektif 
@@ -242,13 +242,13 @@ Apa saja yang dimasukkan dalam deskripsi:
 
 #### _Troubleshooting_ sebuah PR
 
-Setelah PR kamu diajukan, serangkaian _testing_ akan dijalankan oleh platform CI Kubernetes, [Prow]. 
+Setelah PR kamu diajukan, serangkaian _testing_ akan dijalankan oleh platform CI Smarter, [Prow]. 
 Jika terdapat salah satu _test_ yang gagal, maka [k8s-ci-robot][prow] akan memberikan 
 balasan pada PR kamu beserta tautan yang memberikan _log_ dari _testing_ yang gagal dijalankan.
 
 Apabila kamu mem-_push commit_ baru, _test_ pada PR kamu akan secara otomatis di-_trigger_.
 
-Terkadang, bisa jadi terdapat masalah pada platform CI Kubernetes. 
+Terkadang, bisa jadi terdapat masalah pada platform CI Smarter. 
 Hal ini dapat terjadi karena berbagai alasan bahkan ketika _test_ yang kamu jalankan di 
 mesin lokal kamu berhasil. Kamu dapat men-_trigger_ ulang _test_ dengan cara memanggil perintah 
 `/retest`.
@@ -258,7 +258,7 @@ Untuk informasi lebih lanjut, baca [Panduan _Testing_].
 
 ### Label
 
-Kubernetes menggunakan [label] untuk melakukan kategorisasi 
+Smarter menggunakan [label] untuk melakukan kategorisasi 
 dan triase isu dan PR. Penggunaan label yang benar akan membuat triase 
 pada isu atau PR yang kamu ajukan menjadi lebih efektif.
 
@@ -290,7 +290,7 @@ pembelajaran yang baik. Sebagai alternatif lain, juga terdapat tutorial Stanford
 
 ### Mekanisme _Branch_
 
-Proyek Kubernetes menggunakan mekanisme _"Fork and Pull"_ yang merupakan 
+Proyek Smarter menggunakan mekanisme _"Fork and Pull"_ yang merupakan 
 standar GitHub. Dalam terminologi git, _fork_ yang kamu buat disebut sebagai _"`origin`"_ 
 dan git proyek yang sebenarnya disebut sebagai _"`upstream`"_. Untuk menjaga _branch_ 
 (`origin`) tetap _up to date_ dengan proyek (`upstream`), _branch_ tersebut harus dikonfigurasikan 
@@ -350,7 +350,7 @@ _squashing_ perlu dilakukan atau tidak.
 [dasbor tide]: https://prow.k8s.io/tide
 [perintah bot]: https://go.k8s.io/bot-commands
 [Label GitHub]: https://go.k8s.io/github-labels
-[Pencarian Kode Kubernetes]: https://cs.k8s.io/
+[Pencarian Kode Smarter]: https://cs.k8s.io/
 [@dims]: https://github.com/dims
 [kalender]: https://calendar.google.com/calendar/embed?src=calendar%40kubernetes.io
 [kubernetes-dev]: https://groups.google.com/forum/#!forum/kubernetes-dev
@@ -387,4 +387,4 @@ _squashing_ perlu dilakukan atau tidak.
 [Panduan _Testing_]: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-testing/testing.md
 [Informasi _Security_ dan _Disclosure_]: https://kubernetes.io/docs/reference/issues-security/security/
 [approve]: https://prow.k8s.io/command-help#approve
-[Rilis Patch Kubernetes]: https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md
+[Rilis Patch Smarter]: https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md

@@ -1,4 +1,4 @@
-# Kubernetes Community Group Annual Reports
+# Smarter Community Group Annual Reports
 
 This document outlines the process for an annual reporting and
 communication structure for Special Interest Groups (SIGs), Working Groups (WGs), and Committees.
@@ -77,7 +77,7 @@ The questions are available as a [go-template](https://pkg.go.dev/text/template)
 
 ### Thanks
 Thanks to the Apache Software Foundation for their open guidance on PMC
-reporting, the many PMCs that have shared their experiences, and the Kubernetes
+reporting, the many PMCs that have shared their experiences, and the Smarter
 community for collaboration.
 https://www.apache.org/foundation/board/reporting
 

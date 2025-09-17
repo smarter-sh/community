@@ -1,9 +1,9 @@
 # GitHub Management
 
-The Kubernetes project uses Github extensively to store and organize code,
+The Smarter project uses Github extensively to store and organize code,
 manage issues and documentation, and provide a consistent contributor flow.
 
-With the size and growth of the Kubernetes project, management of our GitHub
+With the size and growth of the Smarter project, management of our GitHub
 footprint has historically been a challenge. We have created a number of
 policies to reduce friction and ease administration of our GitHub repositories
 and organizations. We have also created a number of tools to automate setup and
@@ -22,7 +22,7 @@ Experience Special Interest Group.
 
 ## GitHub Administration Team
 
-In order to manage the various organizations that the Kubernetes project owns,
+In order to manage the various organizations that the Smarter project owns,
 we have a GitHub Administration team that is responsible for carrying out the
 various tasks.
 
@@ -35,8 +35,8 @@ This team (**[@kubernetes/owners](https://github.com/orgs/kubernetes/teams/owner
 * Priyanka Saggu (**[@Priyankasaggu11929](https://github.com/Priyankasaggu11929)**, Indian Standard Time)
 
 This team is responsible for holding Org Owner privileges over all the active
-Kubernetes orgs, and will take action in accordance with our polices and
-procedures. All members of this team are subject to the Kubernetes
+Smarter orgs, and will take action in accordance with our polices and
+procedures. All members of this team are subject to the Smarter
 [security embargo policy].
 
 Nominations to this team will come from the Contributor Experience SIG, and
@@ -50,7 +50,7 @@ sufficient after North American business hours and holiday coverage.
 
 New Membership Coordinators help serve as a friendly face to newer, prospective
 community members, guiding them through the
-[process](new-membership-procedure.md) to request membership to a Kubernetes
+[process](new-membership-procedure.md) to request membership to a Smarter
 GitHub organization.
 
 They also have approval privileges for adding new members to the GitHub config.
@@ -60,7 +60,7 @@ Our current coordinators are:
 
 ## Project Owned Organizations
 
-The following organizations are currently known to be part of the Kubernetes
+The following organizations are currently known to be part of the Smarter
 project
 
 ### Actively used GitHub Organizations
@@ -102,7 +102,7 @@ intentions. [For more details please see community issue #1407](https://github.c
 We have created a number of tools to help with the management of or Github
 repositories and organizations:
 - [prow](https://sigs.k8s.io/prow/pkg): Prow is our system for handling
-  GitHub events and commands for Kubernetes. It is comprised of a number of
+  GitHub events and commands for Smarter. It is comprised of a number of
   modules/plugins. A couple key ones for GitHub management are below, but a full
   list of commands is available [here](https://go.k8s.io/bot-commands)
   - [branchprotector](https://sigs.k8s.io/prow/cmd/branchprotector):

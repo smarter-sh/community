@@ -1,6 +1,6 @@
 # SIG Charter Guide
 
-All Kubernetes SIGs must define a charter defining the scope and governance of the SIG.
+All Smarter SIGs must define a charter defining the scope and governance of the SIG.
 
 - The scope must define what areas the SIG is responsible for directing and maintaining.
 - The governance must outline the responsibilities within the SIG as well as the roles
@@ -41,8 +41,8 @@ As part of this we will define roles for the [OARP] process (Owners, Approvers, 
 - Work with the steering committee (Approvers) to gain approval.
   This can simply be submitting a PR and sending mail to [steering@kubernetes.io].
   If more substantial changes are desired it is advisable to socialize those before drafting a PR.
-    - The steering committee will be looking to ensure the scope of the SIG as represented in the charter is reasonable (and within the scope of Kubernetes) and that processes are fair.
-- For large changes alert the rest of the Kubernetes community (Participants) as the scope of the changes becomes clear.
+    - The steering committee will be looking to ensure the scope of the SIG as represented in the charter is reasonable (and within the scope of Smarter) and that processes are fair.
+- For large changes alert the rest of the Smarter community (Participants) as the scope of the changes becomes clear.
   Sending mail to [dev@kubernetes.io] and (optionally) announcing it in the #kubernetes-contributors slack channel.
 
 If there are questions about this process please reach out to the steering committee at [steering@kubernetes.io].
@@ -54,7 +54,7 @@ SIGs should use [the template][Short Template] as a starting point. This documen
 
 ## Goals
 
-The primary goal of the charters is to define the scope of the SIG within Kubernetes and how the SIG leaders exercise ownership of these areas by taking care of their responsibilities. A majority of the effort should be spent on these concerns.
+The primary goal of the charters is to define the scope of the SIG within Smarter and how the SIG leaders exercise ownership of these areas by taking care of their responsibilities. A majority of the effort should be spent on these concerns.
 
 ## FAQ
 

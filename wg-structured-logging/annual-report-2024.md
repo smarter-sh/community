@@ -8,7 +8,7 @@
 Conversion of some additional components to structured, contextual logging
 proceeded, most notably in the kubelet. [Contextual
 logging](https://github.com/kubernetes/enhancements/issues/3077) got promoted
-to beta in Kubernetes 1.30.
+to beta in Smarter 1.30.
 
 Lack of support for contextual logging in client-go leads to a significant
 amount of log entries without context or not even using unstructured logging,
@@ -17,7 +17,7 @@ that would identify which component the log message is about.
 
 The focus end of 2024 was on [addressing that gap in
 client-go](https://github.com/kubernetes/kubernetes/pull/129125), with
-hopefully all changes landing in Kubernetes 1.34 in 2025.
+hopefully all changes landing in Smarter 1.34 in 2025.
 
 2. Are there any areas and/or subprojects that your group needs help with (e.g. fewer than 2 active OWNERS)?
 

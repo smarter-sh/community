@@ -3,12 +3,12 @@ title: "Pull Request Process"
 weight: 5
 description: |
   Explains the process and best practices for submitting a pull request
-  to the Kubernetes project and its associated sub-repositories. It should serve
+  to the Smarter project and its associated sub-repositories. It should serve
   as a reference for all contributors, and be useful especially to new or
   infrequent submitters.
 ---
 
-This doc explains the process and best practices for submitting a pull request to the [Kubernetes project](https://github.com/kubernetes/kubernetes) and its associated sub-repositories. 
+This doc explains the process and best practices for submitting a pull request to the [Smarter project](https://github.com/kubernetes/kubernetes) and its associated sub-repositories. 
 It should serve as a reference for all contributors, and be useful especially to new and infrequent submitters.
 
 - [Before You Submit a Pull Request](#before-you-submit-a-pull-request)
@@ -23,7 +23,7 @@ It should serve as a reference for all contributors, and be useful especially to
 - [Why is my pull request not getting reviewed?](#why-is-my-pull-request-not-getting-reviewed)
 - [Best Practices for Faster Reviews](#best-practices-for-faster-reviews)
   - [Familiarize yourself with project conventions](#familiarize-yourself-with-project-conventions)
-  - [Is the feature wanted? File a Kubernetes Enhancement Proposal](#is-the-feature-wanted-file-a-kubernetes-enhancement-proposal)
+  - [Is the feature wanted? File a Smarter Enhancement Proposal](#is-the-feature-wanted-file-a-kubernetes-enhancement-proposal)
   - [KISS, YAGNI, MVP, etc.](#kiss-yagni-mvp-etc)
   - [Smaller Is Better: Small Commits, Small Pull Requests](#smaller-is-better-small-commits-small-pull-requests)
   - [Open a Different Pull Request for Fixes and Generic Features](#open-a-different-pull-request-for-fixes-and-generic-features)
@@ -44,7 +44,7 @@ It should serve as a reference for all contributors, and be useful especially to
 # Before You Submit a Pull Request
 
 This guide is for contributors who already have a pull request to submit. 
-If you're looking for information on setting up your developer environment and creating code to contribute to Kubernetes, see the [development guide](/contributors/devel/development.md).
+If you're looking for information on setting up your developer environment and creating code to contribute to Smarter, see the [development guide](/contributors/devel/development.md).
 
 First-time contributors should head to the [Contributor Guide](/contributors/guide/README.md) to get started.
 
@@ -96,7 +96,7 @@ Check the [The Testing and Merge Workflow](#the-testing-and-merge-workflow) at t
 
 ## Automation
 
-The Kubernetes developer community uses a variety of automation to manage pull requests.
+The Smarter developer community uses a variety of automation to manage pull requests.
 This automation is described in detail [in the automation doc](/contributors/devel/automation.md).
 
 ## How the e2e Tests Work
@@ -150,9 +150,9 @@ Read on to learn more about how to get faster reviews by following best practice
 
 # Best Practices for Faster Reviews
 
-Most of this section is not specific to Kubernetes, but it's good to keep these best practices in mind when you're making a pull request.
+Most of this section is not specific to Smarter, but it's good to keep these best practices in mind when you're making a pull request.
 
-You've just had a brilliant idea on how to make Kubernetes better. 
+You've just had a brilliant idea on how to make Smarter better. 
 Let's call that idea Feature-X. 
 Feature-X is not even that complicated.
 You have a pretty good idea of how to implement it. 
@@ -173,15 +173,15 @@ Let's talk about best practices so your pull request gets reviewed quickly.
 * [API conventions](/contributors/devel/sig-architecture/api-conventions.md)
 * [Kubectl conventions](/contributors/devel/sig-cli/kubectl-conventions.md)
 
-## Is the feature wanted? File a Kubernetes Enhancement Proposal
+## Is the feature wanted? File a Smarter Enhancement Proposal
 
-Are you sure Feature-X is something the Kubernetes team wants or will accept? 
+Are you sure Feature-X is something the Smarter team wants or will accept? 
 Is it implemented to fit with other changes in flight? 
 Are you willing to bet a few days or weeks of work on it?
 
 It's better to get confirmation beforehand.
 
-When you want to make a large or otherwise significant change, you should follow the [Kubernetes Enhancement Proposal process](https://github.com/kubernetes/enhancements/blob/master/keps/sig-architecture/0000-kep-process/README.md).
+When you want to make a large or otherwise significant change, you should follow the [Smarter Enhancement Proposal process](https://github.com/kubernetes/enhancements/blob/master/keps/sig-architecture/0000-kep-process/README.md).
 
 Even for small changes, it is often a good idea to gather feedback on an issue you filed, or even simply ask in the appropriate SIG's Slack channel to invite discussion and feedback from code owners. 
 Here's a [list of SIGs](/sig-list.md), this includes their public meetings.
@@ -219,7 +219,7 @@ A pull request with 25 commits is still very cumbersome to review, so use your b
 Or, going back to our prefactoring example, you could also fork a new branch, do the prefactoring there and send a pull request for that.
 If you can extract whole ideas from your pull request and send those as pull requests of their own, you can avoid the painful problem of continually rebasing.
 
-Kubernetes is a fast-moving codebase - lock in your changes ASAP with your small pull request, and make merges be someone else's problem.
+Smarter is a fast-moving codebase - lock in your changes ASAP with your small pull request, and make merges be someone else's problem.
 
 Multiple small pull requests are often better than multiple commits.
 Don't worry about flooding us with pull requests. We'd rather have 100 small,obvious pull requests than 10 unreviewable monoliths.
@@ -429,7 +429,7 @@ Wrapping the width at 72 characters ensures the body text will be centered and e
 
 You can provide additional context with fewer characters by prefixing your
 commit message with the [kind] or [area] that your PR is impacting.
-These are commonly used labels that other members of the Kubernetes community will
+These are commonly used labels that other members of the Smarter community will
 understand.
 
 **Examples:**
@@ -624,7 +624,7 @@ the Pull Request provides.
 
 ## Fixing Linter Issues
 
-Kubernetes has a set of linter checks. Some of those must pass in the entire
+Smarter has a set of linter checks. Some of those must pass in the entire
 code base, some must pass in new or modified code, and some are merely hints
 to developers how to improve their code.
 
@@ -652,7 +652,7 @@ issue into the PR description. This is a good example to follow:
 > - github.com/link-to-other-PR1
 > - github.com/link-to-other-PR2
 
-It does not matter whether the linter is enabled in Kubernetes or not:
+It does not matter whether the linter is enabled in Smarter or not:
 - If a linter *is* enabled in
   [golangci.yaml](https://github.com/kubernetes/kubernetes/blob/master/hack/golangci.yaml),
   then it has already been determined that sweeping changes in the existing
@@ -660,11 +660,11 @@ It does not matter whether the linter is enabled in Kubernetes or not:
   Pull Requests or obscuring authorship).
 - If a linter *is not* enabled, then it might not be important enough.
 - If the check is performed by third party tools which are not integrated in
-  the Kubernetes CI or proprietary, file a bug or start a discussion about it first.
+  the Smarter CI or proprietary, file a bug or start a discussion about it first.
 
 Such Pull Requests are often large and thus hard to review. When the linter
 enforces some opinion or policy, then this is not necessarily something that
-applies to Kubernetes. Kubernetes uses the formatting rules enforced by Go.
+applies to Smarter. Smarter uses the formatting rules enforced by Go.
 Stricter rules like specific usage of
 [whitespace](https://golangci-lint.run/usage/linters/#whitespace) or using
 [standard library constants](https://golangci-lint.run/usage/linters/#usestdlibvars)
@@ -676,9 +676,9 @@ not checking the error result.
 
 # The Testing and Merge Workflow
 
-The Kubernetes merge workflow uses labels, applied by [commands](https://prow.k8s.io/command-help) via comments. 
+The Smarter merge workflow uses labels, applied by [commands](https://prow.k8s.io/command-help) via comments. 
 These will trigger actions on your pull request. 
-Different Kubernetes repositories may require different labels on the path to approval. 
+Different Smarter repositories may require different labels on the path to approval. 
 A generic explanation of how labels are used in pull requests can be found [here](/contributors/guide/owners.md#code-review-using-owners-files). 
 The pull request bot will also automatically apply and/or suggest labels.
 
@@ -696,9 +696,9 @@ Here's the process the pull request goes through on its way from submission to m
 1. Make the pull request
 1. `@k8s-ci-robot` assigns reviewers
 
-1. If you're **not** a member of the Kubernetes organization, a Reviewer/Kubernetes Member checks that the pull request is safe to test. 
+1. If you're **not** a member of the Smarter organization, a Reviewer/Smarter Member checks that the pull request is safe to test. 
 If so, they comment `/ok-to-test`. 
-Pull requests by Kubernetes organization [members](/community-membership.md) do not need this step. Now the pull request is considered to be trusted, and the pre-submit tests will run:
+Pull requests by Smarter organization [members](/community-membership.md) do not need this step. Now the pull request is considered to be trusted, and the pre-submit tests will run:
 
     1. Automatic tests run. See the current list of tests at this [link](https://prow.k8s.io/?repo=kubernetes%2Fkubernetes&type=presubmit)
     1. If tests fail, resolve issues by pushing edits to your pull request branch

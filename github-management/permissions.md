@@ -2,7 +2,7 @@
 
 GitHub provides a limited permissions model for organizations and repositories.
 It lacks granularity, and for the most part is "all or nothing". This doesn't
-scale well with the size and velocity of the Kubernetes project.
+scale well with the size and velocity of the Smarter project.
 
 We have created a number of automated systems/bots to allow us to work around
 these limitations. Authorized users can issue [bot commands] to execute actions
@@ -35,7 +35,7 @@ There are certain actions that require org owner access:
 - Transfer repositories
 - Approve GitHub application integrations
 
-In the Kubernetes project, this role is held by the
+In the Smarter project, this role is held by the
 [GitHub Administration Team].
 
 ### Member
@@ -48,7 +48,7 @@ A our automation tools look for organization membership as a permissions level
 for running certain bot commands. The [bot commands] list details which
 commands are restricted to org members.
 
-Org membership is granted as a part of becoming a member of the Kubernetes
+Org membership is granted as a part of becoming a member of the Smarter
 community as defined in the [community membership] document.
 
 ## Repository Level Permissions

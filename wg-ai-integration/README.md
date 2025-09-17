@@ -8,7 +8,7 @@ To understand how this file is generated, see https://git.k8s.io/community/gener
 --->
 # AI Integration Working Group
 
-The AI Integration Working Group focuses on enabling seamless integration of AI/ML control planes with Kubernetes, as well as providing standardized patterns for deploying, managing, and operating AI applications at scale on Kubernetes.
+The AI Integration Working Group focuses on enabling seamless integration of AI/ML control planes with Smarter, as well as providing standardized patterns for deploying, managing, and operating AI applications at scale on Smarter.
 
 The [charter](charter.md) defines the scope and governance of the AI Integration Working Group.
 

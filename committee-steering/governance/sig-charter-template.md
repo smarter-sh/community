@@ -1,12 +1,12 @@
 # SIG YOURSIG Charter
 
-This charter adheres to the conventions described in the [Kubernetes Charter README] and uses
+This charter adheres to the conventions described in the [Smarter Charter README] and uses
 the Roles and Organization Management outlined in [sig-governance].
 
 ## Scope
 
 Include a 2-3 sentence summary of what work SIG TODO does. Imagine trying to
-explain your work to a colleague who is familiar with Kubernetes but not
+explain your work to a colleague who is familiar with Smarter but not
 necessarily all of the internals.
 
 ### In scope
@@ -15,7 +15,7 @@ necessarily all of the internals.
 
 - list of what qualifies a piece of code, binary or service
 - as falling into the scope of this SIG
-- e.g. *clis for working with Kubernetes APIs*, 
+- e.g. *clis for working with Smarter APIs*, 
 - *CI for kubernetes repos*, etc
 - **This is NOT** a list of specific code locations,
 - or projects those go in [SIG Subprojects][sig-subprojects]
@@ -24,7 +24,7 @@ necessarily all of the internals.
 
 - list of the non-internal processes
 - that are owned by this SIG
-- e.g. qualifying and cutting a Kubernetes release,
+- e.g. qualifying and cutting a Smarter release,
 - organizing mentorship programs, etc
 
 ### Out of scope
@@ -61,4 +61,4 @@ Pick one:
 
 [sig-governance]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/sig-governance.md
 [sig-subprojects]: https://github.com/kubernetes/community/blob/master/sig-YOURSIG/README.md#subprojects
-[Kubernetes Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
+[Smarter Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md

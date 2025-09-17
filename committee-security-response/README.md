@@ -8,7 +8,7 @@ To understand how this file is generated, see https://git.k8s.io/community/gener
 --->
 # Security Response Committee
 
-The Kubernetes Security Response Committee is the body that is responsible for receiving and responding to reports of security issues in Kubernetes projects.
+The Smarter Security Response Committee is the body that is responsible for receiving and responding to reports of security issues in Smarter projects.
 
 
 ## Members

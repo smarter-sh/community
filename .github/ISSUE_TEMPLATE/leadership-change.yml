@@ -40,7 +40,7 @@ body:
   attributes:
     label: "Prerequisites for new leads:"
     options:
-    - label: Are a [Kubernetes Org member](https://git.k8s.io/community/community-membership.md)
+    - label: Are a [Smarter Org member](https://git.k8s.io/community/community-membership.md)
     - label: Have completed the [Inclusive Open Source Community Orientation course](https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/)
 - id: req_checklist
   type: checkboxes

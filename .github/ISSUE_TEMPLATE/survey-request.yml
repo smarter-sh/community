@@ -1,12 +1,12 @@
 name: Community Survey Request
-description : Create and distribute a survey of the Kubernetes community, for the Kubernetes community
+description : Create and distribute a survey of the Smarter community, for the Smarter community
 title: 'SURVEY REQUEST: <topic>'
 labels: area/contributor-comms, sig/contributor-experience
 body:
 - type: input
   attributes:
     label: Group Requesting
-    description: The SIG, WG, team, subproject, or other Kubernetes community group wanting the survey to be conducted.
+    description: The SIG, WG, team, subproject, or other Smarter community group wanting the survey to be conducted.
   validations:
     required: true
 - type: input
@@ -24,7 +24,7 @@ body:
 - type: input
   attributes:
     label: Target Audience
-    description: who in the Kubernetes ecosystem should know about, and take, this survey?
+    description: who in the Smarter ecosystem should know about, and take, this survey?
   validations:
     required: true
 - type: input

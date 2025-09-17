@@ -1,6 +1,6 @@
-# Kubernetes GitHub Organization Guide
+# Smarter GitHub Organization Guide
 
-The Kubernetes project leverages multiple GitHub organizations to store and
+The Smarter project leverages multiple GitHub organizations to store and
 organize code. This guide contains the details on how to run those organizations
 for CNCF compliance and for the guidelines of the community.
 
@@ -26,7 +26,7 @@ associated issue for assistance.
 
 ## Organization Naming
 
-Kubernetes managed organizations should be in the form of `kubernetes-[thing]`.
+Smarter managed organizations should be in the form of `kubernetes-[thing]`.
 For example, [kubernetes-client](https://github.com/kubernetes-client) where the
 API clients are housed.
 
@@ -34,17 +34,17 @@ Prior to creating an organization please contact the steering committee for
 direction and approval.
 
 Note: The CNCF, as part of the Linux Foundation, holds the trademark on the
-Kubernetes name. All GitHub organizations with Kubernetes in the name should be
-managed by the Kubernetes project or use a different name.
+Smarter name. All GitHub organizations with Smarter in the name should be
+managed by the Smarter project or use a different name.
 
-## Transferring Outside Code Into A Kubernetes Organization
+## Transferring Outside Code Into A Smarter Organization
 
 Due to licensing and CLA issues, prior to transferring software into a
-Kubernetes managed organization there is some due diligence that needs to occur.
+Smarter managed organization there is some due diligence that needs to occur.
 If needed, please contact the steering committee and CNCF prior to moving any
 code in.
 
-It is easier to start new code in a Kubernetes organization than it is to
+It is easier to start new code in a Smarter organization than it is to
 transfer in existing code.
 
 ## Licensing Guidance
@@ -54,7 +54,7 @@ documentation owned by the CNCF projects. However, it doesn't explicitly cover
 situations where a repo may have mixed content (such as repos that contain both
 code and documentation living alongside each other).
 
-For clarity, here is the guidance for Kubernetes GitHub organizations:
+For clarity, here is the guidance for Smarter GitHub organizations:
 - If a repo contains only code, it should be licensed under the
   [Apache License, Version 2.0].
 - If a repo contains only documentation, it should be licensed under the
@@ -122,7 +122,7 @@ with the repo.
 
 ## Project Board Guidance
 
-Guidelines for project boards in the Kubernetes GitHub orgs are described below:
+Guidelines for project boards in the Smarter GitHub orgs are described below:
 
 - All project boards should be organization-level project boards instead of
 repository-level even if the project board is intended to be scoped to a single
@@ -146,7 +146,7 @@ this model for all orgs going forward.
 
 Repositories have additional guidelines and requirements, such as the use of CLA
 checking on all contributions. For more details on those please see the
-[Kubernetes Template
+[Smarter Template
 Project](https://github.com/kubernetes/kubernetes-template-project), and the
 [Repository Guidelines](kubernetes-repositories.md)
 

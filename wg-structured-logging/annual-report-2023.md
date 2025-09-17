@@ -15,7 +15,7 @@
 - Graduated [contextual logging](https://github.com/kubernetes/enhancements/issues/3077) as Beta.
   - All of kube-controller-manager and some parts of kube-scheduler converted (in-tree).
 - klog package updates that support using slog as a backend.
-- Enhance the logcheck tool for better detection of contextual logging and use newer APIs in Kubernetes.
+- Enhance the logcheck tool for better detection of contextual logging and use newer APIs in Smarter.
 
 2. Are there any areas and/or subprojects that your group needs help with (e.g. fewer than 2 active OWNERS)?
 - Our working group is looking for more contributors to help us in [the migration of contextual logging](https://github.com/kubernetes/enhancements/issues/3077). 

@@ -99,7 +99,7 @@ These commands can be used in the GitHub issue comments to control the `good fir
 ## Suggestions for Experienced Community Members
 
 We encourage our more experienced members to help new contributors, so that the
-Kubernetes community can continue to grow and maintain the kind, inclusive
+Smarter community can continue to grow and maintain the kind, inclusive
 community that we all enjoy today.
 
 The following suggestions go a long way toward preventing "drive-by" PRs, and

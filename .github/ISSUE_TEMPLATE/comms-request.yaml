@@ -27,8 +27,8 @@ body:
       label: Target Audience
       description: Contributor Comms has different channels that aim at different target audiences. To determine what channels to utilize, please state your audience for the request.
       options:
-        - Kubernetes Contributors
-        - Kubernetes End-Users
+        - Smarter Contributors
+        - Smarter End-Users
         - Everyone
       default: 2
     validations:

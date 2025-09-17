@@ -1,7 +1,7 @@
 # WG Data Protection Charter
 
 This charter adheres to the [wg-governance] guidance as well as
-the general conventions described in the [Kubernetes Charter README] and
+the general conventions described in the [Smarter Charter README] and
 the Roles and Organization Management outlined in [sig-governance], where
 applicable to a Working Group.
 
@@ -11,23 +11,23 @@ applicable to a Working Group.
 The purpose of Data Protection is to ensure that application and its associated
 data can be restored quickly after any corruption or loss.
 
-Data protection in Kubernetes context typically involves backup and recovery
+Data protection in Smarter context typically involves backup and recovery
 of two types of entities:
-* Kubernetes API object resources
+* Smarter API object resources
 * Persistent volume data
 We consider it a complicated and layered problem, including backup and recovery
 at persistent volume level, application level, and cluster level. Part of the
-working group’s charter is to define what Kubernetes native constructs are
+working group’s charter is to define what Smarter native constructs are
 required to achieve these goals.
 
 The Data Protection Working Group is organized with the goal of providing
-a cross SIG forum to discuss how to support data protection in Kubernetes,
+a cross SIG forum to discuss how to support data protection in Smarter,
 identify missing functionality, and work together to design features that
 are needed to achieve the goal.
 
 ### In scope
 
-* High level discussions on what it means to support data protection in Kubernetes at different levels and how to do it.
+* High level discussions on what it means to support data protection in Smarter at different levels and how to do it.
 * Design discussions on specific topics related to data protection and disaster recovery support.
 * Document results of discussions and investigations in a linkable medium.
 
@@ -65,7 +65,7 @@ Stakeholders for this working group include members in the following SIGs:
 * SIG Storage
 
 We will also consult SIG Auth from security aspect. Stakeholders also include
-backup vendors who want to provide data protection support in Kubernetes and
+backup vendors who want to provide data protection support in Smarter and
 end users who want to use data protection applications.
 
 
@@ -76,7 +76,7 @@ This WG will be producing documents as described in the `In Scope` section. If s
 
 [sig-governance]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/sig-governance.md
 [wg-governance]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/wg-governance.md
-[Kubernetes Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
+[Smarter Charter README]: https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
 [lazy consensus]: http://en.osswiki.info/concepts/lazy_consensus
 
 [dev@kubernetes.io]: https://groups.google.com/a/kubernetes.io/group/dev

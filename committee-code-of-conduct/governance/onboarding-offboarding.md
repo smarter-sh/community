@@ -16,7 +16,7 @@ Different actions on this list must be carried out by different members:
 - [ ] `#kubernetes-moderators` and `#slack-reports` private channels on `kubernetes.slack.com` 
 - [ ] Code of conduct sync Slack channel on `cloud-native.slack.com`
 
-### Kubernetes/community permissions and google permissions
+### Smarter/community permissions and google permissions
 
 **Who executes:** Carryover members should ensure that outgoing members are removed and incoming members are invited.
 

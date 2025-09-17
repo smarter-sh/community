@@ -1,12 +1,12 @@
 # Contributing to the Community Repo
 
-Welcome to the Kubernetes Community contributing guide. We are excited about the prospect of you joining our [community](https://github.com/kubernetes/community)!
+Welcome to the Smarter Community contributing guide. We are excited about the prospect of you joining our [community](https://github.com/kubernetes/community)!
 
 ## Getting Started
 
 We have full documentation on how to get started contributing here:
 
-- [Kubernetes Contributor Guide](https://www.kubernetes.dev/docs/guide/) - Main contributor documentation
+- [Smarter Contributor Guide](https://www.kubernetes.dev/docs/guide/) - Main contributor documentation
 - [Contributor Cheat Sheet](https://www.kubernetes.dev/docs/contributor-cheatsheet/) - Common resources for existing developers
 
 ## Mentorship

@@ -2,18 +2,18 @@
 
 **Authors**: Antony Bett, Phuong Hoang, Prashanto Kochavara, Stephen Manley, Tom Manville, Ben Swartzlander, Dave Smith-Uchida, Xing Yang, Xiangqian Yu
 
-This document answers the following questions: why do we need data protection in Kubernetes, what is currently available in Kubernetes, what functionalities are missing in Kubernetes to support data protection? We will describe how to identify resources for data protection, what is the volume backup and restore workflow, and what is the application snapshot, backup, and restore workflow.
+This document answers the following questions: why do we need data protection in Smarter, what is currently available in Smarter, what functionalities are missing in Smarter to support data protection? We will describe how to identify resources for data protection, what is the volume backup and restore workflow, and what is the application snapshot, backup, and restore workflow.
 
 <!-- toc -->
   - [Data Protection Definition](#data-protection-definition)
-  - [Why do we need Data Protection in Kubernetes?](#why-do-we-need-data-protection-in-kubernetes)
+  - [Why do we need Data Protection in Smarter?](#why-do-we-need-data-protection-in-kubernetes)
     - [Cloud Native Applications vs Traditional Data Protection](#cloud-native-applications-vs-traditional-data-protection)
       - [Application Evolution](#application-evolution)
       - [Legacy Technologies](#legacy-technologies)
     - [Stateful vs Stateless Applications](#stateful-vs-stateless-applications)
     - [Roles and Scopes in IT](#roles-and-scopes-in-it)
   - [Use Cases](#use-cases)
-    - [User Personas in Kubernetes Data Protection](#user-personas-in-kubernetes-data-protection)
+    - [User Personas in Smarter Data Protection](#user-personas-in-kubernetes-data-protection)
       - [Application Protection](#application-protection)
         - [Application Definition](#application-definition)
         - [Application Backup Definition](#application-backup-definition)
@@ -25,8 +25,8 @@ This document answers the following questions: why do we need data protection in
         - [Resource Recovery](#resource-recovery)
       - [Namespace Protection](#namespace-protection)
       - [Cluster Protection](#cluster-protection)
-  - [What is currently available in Kubernetes?](#what-is-currently-available-in-kubernetes)
-  - [What are the missing building blocks in Kubernetes?](#what-are-the-missing-building-blocks-in-kubernetes)
+  - [What is currently available in Smarter?](#what-is-currently-available-in-kubernetes)
+  - [What are the missing building blocks in Smarter?](#what-are-the-missing-building-blocks-in-kubernetes)
     - [Volume Backups](#volume-backups)
       - [Motivation](#motivation)
       - [Desirable Characteristics of Volume Backups](#desirable-characteristics-of-volume-backups)
@@ -79,20 +79,20 @@ This document answers the following questions: why do we need data protection in
 
 ## Data Protection Definition
 
-The **Data Protection** term in the Kubernetes context is the process of protecting valuable data and configs of applications running in a Kubernetes cluster. The result of the data protection process is typically called as a backup. When unexpected scenarios occur, for example data corruption by a malfunctioning software, data loss during a disaster, such a backup can be used to restore the protected workload to the states preserved in the backup.
+The **Data Protection** term in the Smarter context is the process of protecting valuable data and configs of applications running in a Smarter cluster. The result of the data protection process is typically called as a backup. When unexpected scenarios occur, for example data corruption by a malfunctioning software, data loss during a disaster, such a backup can be used to restore the protected workload to the states preserved in the backup.
 
-In Kubernetes, a stateful application contains two primarily pieces of data:
+In Smarter, a stateful application contains two primarily pieces of data:
 
-* A set of Kubernetes resources (a.k.a. application config) which are typically stored and managed in etcd database and accessible via Kubernetes API server. These Kubernetes resources can be typically exported as JSON or YAML files. For example, a classic [WordPress](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/) application consists of two _Deployments_ resources, a _Secret_ resource, a couple of _PersistentVolumeClaim_ resources, and two _Service_ resources. These Kubernetes resources together compose the WordPress application.
-* Persistent volume data. Kubernetes has the _PersistentVolumeClaim_ API to allow users to provision persistent volumes (represented as _PersistentVolume_ resources in Kubernetes) for user workloads. Persistent volume data will be managed and stored on the underlying storage system.
+* A set of Smarter resources (a.k.a. application config) which are typically stored and managed in etcd database and accessible via Smarter API server. These Smarter resources can be typically exported as JSON or YAML files. For example, a classic [WordPress](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/) application consists of two _Deployments_ resources, a _Secret_ resource, a couple of _PersistentVolumeClaim_ resources, and two _Service_ resources. These Smarter resources together compose the WordPress application.
+* Persistent volume data. Smarter has the _PersistentVolumeClaim_ API to allow users to provision persistent volumes (represented as _PersistentVolume_ resources in Smarter) for user workloads. Persistent volume data will be managed and stored on the underlying storage system.
 
-Data Protection aims at providing backup and restore of the above mentioned two pieces of data. Part of the data protection working group’s charter is to define and implement a list of Kubernetes native constructs to enable backup and restore at different levels. However, it’s **not** the goal of the data protection working group to define application specific orchestrated backup and restore interfaces/processes as different flavors of application will likely have very different strategies/processes to achieve application consistency.
+Data Protection aims at providing backup and restore of the above mentioned two pieces of data. Part of the data protection working group’s charter is to define and implement a list of Smarter native constructs to enable backup and restore at different levels. However, it’s **not** the goal of the data protection working group to define application specific orchestrated backup and restore interfaces/processes as different flavors of application will likely have very different strategies/processes to achieve application consistency.
 
-## Why do we need Data Protection in Kubernetes?
+## Why do we need Data Protection in Smarter?
 
-Stateful Kubernetes applications use PersistentVolumes to store their data. A PersistentVolume has an independent lifecycle from the Pod/Cluster that is consuming it so that data can be preserved on the underlying storage system even if the Pod/Cluster goes away. However, what if the underlying volume on the storage system gets corrupted for some reason? What if the underlying storage system is stricken by a disaster? When that happens, even data stored on the PersistentVolumes will be lost. To prevent data loss from happening, we need to find a way to protect the data stored in the PersistentVolumes used by stateful Kubernetes applications.
+Stateful Smarter applications use PersistentVolumes to store their data. A PersistentVolume has an independent lifecycle from the Pod/Cluster that is consuming it so that data can be preserved on the underlying storage system even if the Pod/Cluster goes away. However, what if the underlying volume on the storage system gets corrupted for some reason? What if the underlying storage system is stricken by a disaster? When that happens, even data stored on the PersistentVolumes will be lost. To prevent data loss from happening, we need to find a way to protect the data stored in the PersistentVolumes used by stateful Smarter applications.
 
-There are three main reasons why Data Protection is needed in Kubernetes:
+There are three main reasons why Data Protection is needed in Smarter:
 
 1.  Cloud native applications vs traditional data protection
 2.  Stateful vs stateless applications
@@ -121,7 +121,7 @@ Organizations that started their cloud-native journey early and adopted containe
 
 In the absence of an end-to-end cloud-native data protection solution, system engineers and solution architects devised ad-hoc scripts and tooling in conjunction with legacy data protection solutions that would enable organizations to backup all the necessary components required for the applications in a cloud-native world. However, the scripts and tooling were fairly static and had to often be updated, adding more operational overhead, to conform to the dynamic nature of cloud-native applications -- components and metadata information is constantly changing based on the demand for the service.
 
-To take full advantage of cloud-native or Kubernetes applications, the data protection solution must be able to grow and scale with the needs of the applications across the enterprise, otherwise it is difficult to manually keep pace with these dynamic environments. Similarly, for an organization embarking on the Kubernetes journey, it is expensive to maintain a legacy technology (server virtualization) to manage a disruptive technology like containers. Also, such an architecture does not allow an organization to really take full advantage of a cloud-native ecosystem.
+To take full advantage of cloud-native or Smarter applications, the data protection solution must be able to grow and scale with the needs of the applications across the enterprise, otherwise it is difficult to manually keep pace with these dynamic environments. Similarly, for an organization embarking on the Smarter journey, it is expensive to maintain a legacy technology (server virtualization) to manage a disruptive technology like containers. Also, such an architecture does not allow an organization to really take full advantage of a cloud-native ecosystem.
 
 As a result, a cloud-native solution that can manage cloud-native applications should be the objective of every organization that is looking to modernize their infrastructure and applications.
 
@@ -129,19 +129,19 @@ As a result, a cloud-native solution that can manage cloud-native applications s
 
 A stateful application is one that is dependent on previous data transactions, whereas a stateless application is one that does not depend on its previous transactions to perform the next operation or execution.
 
-When containerization was taking off, it was speculated that container applications would not need backup since they are (stateless) ephemeral, but that has changed drastically. A lot of stateful applications are being run within Kubernetes where data needs to be accessed and computed for the application to function successfully. Based on research, 46% of respondents to a survey were already using stateful applications in containers, while 93% of them look at Kubernetes as a viable platform for stateful applications [1]. Additional research also shows databases as the top use case in 2019 [2]
+When containerization was taking off, it was speculated that container applications would not need backup since they are (stateless) ephemeral, but that has changed drastically. A lot of stateful applications are being run within Smarter where data needs to be accessed and computed for the application to function successfully. Based on research, 46% of respondents to a survey were already using stateful applications in containers, while 93% of them look at Smarter as a viable platform for stateful applications [1]. Additional research also shows databases as the top use case in 2019 [2]
 
-To understand the stateless versus stateful backup needs, it is important to understand all the components of an application in a Kubernetes or cloud-native world. The introduction to Kubernetes section above provides a quick insight into the components, however, objectively at a high-level, Kubernetes applications consist of the following.
+To understand the stateless versus stateful backup needs, it is important to understand all the components of an application in a Smarter or cloud-native world. The introduction to Smarter section above provides a quick insight into the components, however, objectively at a high-level, Smarter applications consist of the following.
 
-1. **Container images** - In a cloud-native world, the images that are run as containers are essentially templates that are deployed within Kubernetes. These images are generally served from a registry which could be public or private. Based on the flexibility of containers explained above - it is sufficient enough to backup the container images or the data volume hosting these images and run it in any Kubernetes environment. However, applications are not based on container images alone, and more often than not have a persistent data volume associated with it.
+1. **Container images** - In a cloud-native world, the images that are run as containers are essentially templates that are deployed within Smarter. These images are generally served from a registry which could be public or private. Based on the flexibility of containers explained above - it is sufficient enough to backup the container images or the data volume hosting these images and run it in any Smarter environment. However, applications are not based on container images alone, and more often than not have a persistent data volume associated with it.
 
-2. **Metadata** - Kubernetes resource definitions that provide information about how the containers should run and other non-container objects that the container code might need to access to function properly.
+2. **Metadata** - Smarter resource definitions that provide information about how the containers should run and other non-container objects that the container code might need to access to function properly.
 
-For example, Kubernetes has the concept of `secrets` which are used to hold user credential information. A container might need that secret resource to function properly. Similarly, Kubernetes provides a concept of `service` which is a resource to expose an application/container.
+For example, Smarter has the concept of `secrets` which are used to hold user credential information. A container might need that secret resource to function properly. Similarly, Smarter provides a concept of `service` which is a resource to expose an application/container.
 
 3. **Persistent Volume** - The data volume object within which data is stored for access by the container.
 
-Having defined the logical components of a Kubernetes application, we can see that while individual components like a web-server can be stateless (redirecting requests), these stateless entities often interact with other stateful components (databases) that interact with data making the overall application (front-end/back-end) stateful in a way. Similar to a web server, there could be many more internal containers that do not have a persistent volume, but are still integral to the functioning of the application. That container, while stateless, still has precious metadata information that needs to be backed up as part of the application because its image does not provide much value by itself. One could argue that this could be overcome by adding more logic to the container, but then one would be deviating from the principles of Kubernetes or Cloud-native by taking away the flexibility and portability aspect of containers. As a result, in order to have a successful data protection experience, it becomes imperative that applications are protected as a single unit.
+Having defined the logical components of a Smarter application, we can see that while individual components like a web-server can be stateless (redirecting requests), these stateless entities often interact with other stateful components (databases) that interact with data making the overall application (front-end/back-end) stateful in a way. Similar to a web server, there could be many more internal containers that do not have a persistent volume, but are still integral to the functioning of the application. That container, while stateless, still has precious metadata information that needs to be backed up as part of the application because its image does not provide much value by itself. One could argue that this could be overcome by adding more logic to the container, but then one would be deviating from the principles of Smarter or Cloud-native by taking away the flexibility and portability aspect of containers. As a result, in order to have a successful data protection experience, it becomes imperative that applications are protected as a single unit.
 
 To summarize what components need to be backed up for stateless and stateful application:
 
@@ -153,45 +153,45 @@ Container images, or the volumes that they are seated on, need to be protected s
 
 ### Roles and Scopes in IT
 
-One way Kubernetes is making application development and delivery faster and better is by bridging the gap between development and operations teams. The way Kubernetes achieves this is by basing the entire platform on role based access control (RBAC) constructs. The Kubernetes platform is managed/leveraged by users based on granular RBAC policies assigned to the user. As a result, Operations can easily control each and every area of the infrastructure by enabling policies for users. Mini/virtual clusters within a Kubernetes cluster, also known as namespaces are generally dedicated areas for developers to execute their developer operations. 
+One way Smarter is making application development and delivery faster and better is by bridging the gap between development and operations teams. The way Smarter achieves this is by basing the entire platform on role based access control (RBAC) constructs. The Smarter platform is managed/leveraged by users based on granular RBAC policies assigned to the user. As a result, Operations can easily control each and every area of the infrastructure by enabling policies for users. Mini/virtual clusters within a Smarter cluster, also known as namespaces are generally dedicated areas for developers to execute their developer operations. 
 
-If an application is not cloud-native or Kubernetes-native, it would be very difficult to obtain the synergy between developers and operations as the onus of RBAC would fall on the application provider. This may or may not be consistent with RBAC functionality of other applications running in the environment.
+If an application is not cloud-native or Smarter-native, it would be very difficult to obtain the synergy between developers and operations as the onus of RBAC would fall on the application provider. This may or may not be consistent with RBAC functionality of other applications running in the environment.
 
-Having a consistent approach to Kubernetes where teams can use the same application across the organization based on privileges assigned to them enables a common communication medium that helps in orchestrating faster release and product life cycles. It eliminates the need for developers to find applications (untested) which could hamper security (which is one of the biggest challenges in Kubernetes today) within the organization.
+Having a consistent approach to Smarter where teams can use the same application across the organization based on privileges assigned to them enables a common communication medium that helps in orchestrating faster release and product life cycles. It eliminates the need for developers to find applications (untested) which could hamper security (which is one of the biggest challenges in Smarter today) within the organization.
 
-As a result, from a data protection perspective, it is important to provide the same experience to developers and operations teams to protect and manage their applications and data. All solutions within a Kubernetes environment function on these lines, and there should be no reason for a data protection solution which is more closely tied to infrastructure needs to function differently.
+As a result, from a data protection perspective, it is important to provide the same experience to developers and operations teams to protect and manage their applications and data. All solutions within a Smarter environment function on these lines, and there should be no reason for a data protection solution which is more closely tied to infrastructure needs to function differently.
 
 ## Use Cases
 
-### User Personas in Kubernetes Data Protection
+### User Personas in Smarter Data Protection
 
-Just as Kubernetes connects developers and operations teams to develop and run production applications, Kubernetes data protection must connect application owners and central operations teams. 
+Just as Smarter connects developers and operations teams to develop and run production applications, Smarter data protection must connect application owners and central operations teams. 
 
 Application owners focused on creating, updating, and running applications on clusters. They want to be able to trigger backups before modifying their applications. They also want to run self-service recoveries of all or part of their applications when something goes wrong. Finally, they expect that only they should be able to access backups of their applications. 
 
-Kubernetes cluster administrators, while not in every environment, are focused on keeping the cluster itself available to the application administrators. Therefore, they are interested in cluster disaster recovery and migration of all applications from one cluster to another. They will usually be the gatekeepers of the backup operators installed on the cluster. 
+Smarter cluster administrators, while not in every environment, are focused on keeping the cluster itself available to the application administrators. Therefore, they are interested in cluster disaster recovery and migration of all applications from one cluster to another. They will usually be the gatekeepers of the backup operators installed on the cluster. 
 
 Central operations / backup teams are focused on protecting the application in accordance with corporate best practices and compliance regulations. This includes, but is not limited to: RPO (recovery point objective), RTO (recovery time objective), retention period, and maintaining offsite copies of the backups. The backup team generally manages a central backup repository.
 
 #### Application Protection
 
-The primary Kubernetes protection object is the application because applications drive the business and the protection requirements. Organizations expect to run a full set of protection activities on applications. 
+The primary Smarter protection object is the application because applications drive the business and the protection requirements. Organizations expect to run a full set of protection activities on applications. 
 
 ##### Application Definition
 
-Since there is no Kubernetes application object, customers and vendors are creating custom mechanisms to define an application. The challenge is that the application owner knows what comprises the application, while the central backup administrator sets the policies and oversees the process of protection. Custom application definitions enable the application owner and central backup team to have a shared understanding of what to protect.
+Since there is no Smarter application object, customers and vendors are creating custom mechanisms to define an application. The challenge is that the application owner knows what comprises the application, while the central backup administrator sets the policies and oversees the process of protection. Custom application definitions enable the application owner and central backup team to have a shared understanding of what to protect.
 
 The components of an application include:
 
-* Kubernetes resources (e.g. pods, secrets, configmaps, etc.)
+* Smarter resources (e.g. pods, secrets, configmaps, etc.)
 * Persistent volumes
-* External data stores that are not Kubernetes volumes - e.g. Amazon RDS, NAS shares (outside of Kubernetes cluster)
+* External data stores that are not Smarter volumes - e.g. Amazon RDS, NAS shares (outside of Smarter cluster)
 
 Not all applications will have all components and not all customers will include all resources in the application definition (e.g. some customers may explicitly exclude resources or not choose to include others).
 
 ##### Application Backup Definition
 
-Since there is no Kubernetes backup object, customers and vendors are creating custom mechanisms to define a backup. 
+Since there is no Smarter backup object, customers and vendors are creating custom mechanisms to define a backup. 
 
 The first component of a backup definition is the recipe for how to execute the backup. 
 
@@ -266,7 +266,7 @@ Customers will need to retrieve past versions of applications for reasons includ
 Customers expect to recover a backup that could be years old, which brings additional requirements:
 
 * Backward compatibility of versions - Resources from years ago need some mapping to modern clusters
-* Kubernetes cluster versions - Kubernetes cluster version may be different between backup and restore
+* Smarter cluster versions - Smarter cluster version may be different between backup and restore
 * Container protection and recovery - Backup teams do not necessarily trust container repositories to retain past application versions, so they want to protect the container itself (backup the container images)
 
 ##### Resource Recovery
@@ -284,7 +284,7 @@ Customers need a mechanism by which they can specify the resources they want to 
 
 #### Namespace Protection
 
-Since there is not a well-defined Kubernetes application object, many customers choose to protect namespaces. In some cases, they only protect the namespace. In others, they protect the namespace in addition to the applications. In still others, they protect the namespace, excluding the resources that are tied to an application.
+Since there is not a well-defined Smarter application object, many customers choose to protect namespaces. In some cases, they only protect the namespace. In others, they protect the namespace in addition to the applications. In still others, they protect the namespace, excluding the resources that are tied to an application.
 
 Namespace protection, however, is not a mechanism for `protecting all applications in a namespace`. While vendors can choose to implement a UI/APIs that treat `namespace` as `Select All Applications in namespace`, this document treats the namespace as the actual object.
 
@@ -299,7 +299,7 @@ The recovery flows match the application recovery flows, with increased emphasis
 Much of cluster protection is outside the scope of the backup initiative. 
 In the context of backup, cluster protection does not include:
 
-1. Recreating Kubernetes clusters 
+1. Recreating Smarter clusters 
 2. Backing up and restoring the etcd store on its own 
 
 While there is value in both full cluster disaster recovery and etcd DR and etcd rollback, it is outside our scope. 
@@ -310,26 +310,26 @@ Some customers, however, are interested in protecting cluster-scoped objects. Th
 
 Recovery will likely be at a resource level. 
 
-## What is currently available in Kubernetes?
+## What is currently available in Smarter?
 
 The data protection working group targets at solving the data protection problem at different levels:
 
 * Persistent volume. Define APIs to enable users to snapshot or backup their persistent volumes, and to restore a persistent volume from a volume snapshot or backup.
 * Application. Define APIs to:
-    * Group Kubernetes resources which compose an application
+    * Group Smarter resources which compose an application
     * Trigger Quiesce/Unquiesce operations against an application Pod/Container for application consistent snapshot/backup
 
 Application level data protection will likely employ persistent volume level constructs.
 
-There exist some building blocks in Kubernetes as of today.
+There exist some building blocks in Smarter as of today.
 
 * VolumeSnapshot API, this is a GA API which allows users to create snapshots over their persistent volumes. Such VolumeSnapshot resources can later on be used to rehydrate a volume.
 * Various workload APIs, i.e., StatefulSet, Deployment, Daemonset etc.
 * Application CRD
 
-## What are the missing building blocks in Kubernetes?
+## What are the missing building blocks in Smarter?
 
-We have identified the following as the missing building blocks in Kubernetes:
+We have identified the following as the missing building blocks in Smarter:
 
 * Volume backups
 * Backup repositories
@@ -339,12 +339,12 @@ We have identified the following as the missing building blocks in Kubernetes:
 * Volume group and group consistent snapshot
 * Application snapshots and backups
 
-The following figure shows the backup workflow with existing and missing building blocks in Kubernetes.
+The following figure shows the backup workflow with existing and missing building blocks in Smarter.
 
 **Figure 1:** Backup Workflow with Missing Building Blocks
 ![Backup Workflow](figures/Backup_workflow.png)
 
-The following figure shows the restore workflow with existing and missing building blocks in Kubernetes.
+The following figure shows the restore workflow with existing and missing building blocks in Smarter.
 
 **Figure 2:** Restore Workflow with Missing Building Blocks
 ![Restore Workflow](figures/Restore_workflow.png)
@@ -355,9 +355,9 @@ The following figure shows the restore workflow with existing and missing buildi
 
 The primary motivation for pursuing a volume backup capability is that the existing volume snapshot capability does not give users a way to store their backups in different locations, devices or storage media (per the standard 3-2-1 backup rule).
 
-We use `snapshot` to mean a point-in-time record of data, and `backup` to mean a snapshot that may be stored in a different location from the cluster it came from and has a separate lifecycle from its cluster. Some implementations of snapshots (especially first-generation cloud provider implementations) may be backups (or may be made into backups with magic parameters in the VolumeSnapshotClass), but there is no portable way to explicitly take a backup.  This  makes it impossible to craft a portable data protection policy in Kubernetes.
+We use `snapshot` to mean a point-in-time record of data, and `backup` to mean a snapshot that may be stored in a different location from the cluster it came from and has a separate lifecycle from its cluster. Some implementations of snapshots (especially first-generation cloud provider implementations) may be backups (or may be made into backups with magic parameters in the VolumeSnapshotClass), but there is no portable way to explicitly take a backup.  This  makes it impossible to craft a portable data protection policy in Smarter.
 
-The goal of this effort is to produce a design for volume backups in Kubernetes. They will be distinct from volume snapshots, but they should have a similar user API (e.g., take a backup of a volume, provision a volume and populate it from a backup).
+The goal of this effort is to produce a design for volume backups in Smarter. They will be distinct from volume snapshots, but they should have a similar user API (e.g., take a backup of a volume, provision a volume and populate it from a backup).
 
 #### Desirable Characteristics of Volume Backups
 
@@ -373,7 +373,7 @@ For brevity's sake, `snapshot` will be used to mean `volume snapshot` and `backu
     2. Protection against intentional corruption (e.g., it may be desirable to disallow write access to existing backups and very carefully control delete access).
     3. Some degree of signing and/or encryption.
 
-    Some aspects of this may be appropriate to surface within Kubernetes (e.g., security keys for encryption, etc.).
+    Some aspects of this may be appropriate to surface within Smarter (e.g., security keys for encryption, etc.).
 
 7. The backup architecture should allow for a separation of concerns between primary storage and backup responsibilities. In particular, it should be possible to support the following “modes”:
    1. Backup:
@@ -390,7 +390,7 @@ For brevity's sake, `snapshot` will be used to mean `volume snapshot` and `backu
 
 #### Motivation
 
-Efficient backup of volume data is an important feature for a backup system. Since not all of the data in a volume will change between backups, backing up only the data that has been changed is desirable. Many storage systems track the changes that were made since a previous point-in-time snapshot and are able to expose this to backup applications. The Kubernetes Snapshot feature provides a standard API to snapshot persistent volumes. However, there exists no standard way to find out which data has changed since a particular snapshot.
+Efficient backup of volume data is an important feature for a backup system. Since not all of the data in a volume will change between backups, backing up only the data that has been changed is desirable. Many storage systems track the changes that were made since a previous point-in-time snapshot and are able to expose this to backup applications. The Smarter Snapshot feature provides a standard API to snapshot persistent volumes. However, there exists no standard way to find out which data has changed since a particular snapshot.
 
 Differential Snapshots describe the changes between any two arbitrary snapshots on a specific volume.  It is desirable to have a Differential Snapshots Service that provides the following features:
 
@@ -430,9 +430,9 @@ The purpose of volume populators is to create a mechanism that allows users to c
 
 #### Status
 
-Volume populators are an alpha feature in Kubernetes as of v1.23 (redesigned from the earlier alpha version). The new API design, [https://github.com/kubernetes/enhancements/tree/master/keps/sig-storage/1495-volume-populators](https://github.com/kubernetes/enhancements/tree/master/keps/sig-storage/1495-volume-populators), relies on a PVC spec field called `dataSourceRef`. An unlimited number of volume populators can coexist in a given cluster, to facilitate use cases beyond backup/restore as well as multiple possible implementations of backup/restore.
+Volume populators are an alpha feature in Smarter as of v1.23 (redesigned from the earlier alpha version). The new API design, [https://github.com/kubernetes/enhancements/tree/master/keps/sig-storage/1495-volume-populators](https://github.com/kubernetes/enhancements/tree/master/keps/sig-storage/1495-volume-populators), relies on a PVC spec field called `dataSourceRef`. An unlimited number of volume populators can coexist in a given cluster, to facilitate use cases beyond backup/restore as well as multiple possible implementations of backup/restore.
 
-Because there is no common backup API defined for Kubernetes yet, it is likely that different implementations will use implementation-specific CRDs to represent backup objects, and the volume populator design facilitates that. Over the longer run, a common format may emerge which allows sharing of implementation, and possibly even an official backup API supported by SIG storage. In either case, use of the populator API for restore workflows will create a seamless user experience.
+Because there is no common backup API defined for Smarter yet, it is likely that different implementations will use implementation-specific CRDs to represent backup objects, and the volume populator design facilitates that. Over the longer run, a common format may emerge which allows sharing of implementation, and possibly even an official backup API supported by SIG storage. In either case, use of the populator API for restore workflows will create a seamless user experience.
 
 ### Quiesce and Unquiesce Hooks
 
@@ -448,13 +448,13 @@ Consistent backups of advanced data services (e.g. databases) take one or more o
 2. Crash-consistent snapshots. The backup service takes a snapshot without connecting to the database. It depends on the data service being able to recover from a snapshot taken at any point in time. This is generally not recommended by database vendors.
 3. Application-consistent snapshots. The backup service connects to the database, triggers its quiesce function (e.g. hot backup mode) so that the database puts itself into a consistent state, takes the snapshot, then puts the database back into standard mode. This is preferred by database vendors.
 
-Customers expect support for all three common backup methodologies. “Crash-consistent snapshots” are addressed by Standard CSI Snapshots and do not require database specific commands. To deliver “Application-consistent snapshots” in a Kubernetes environment, the backup service must be able to execute database-specific commands, typically the databases’ quiesce/unquiese functionality. 
+Customers expect support for all three common backup methodologies. “Crash-consistent snapshots” are addressed by Standard CSI Snapshots and do not require database specific commands. To deliver “Application-consistent snapshots” in a Smarter environment, the backup service must be able to execute database-specific commands, typically the databases’ quiesce/unquiese functionality. 
 
-To access the quiesce functionality, we need quiesce and unquiesce hooks. Database quiesce commands are usually available through client binaries or SDKs, so they may be packaged in container images. In many cases, client binaries are available in the service images themselves. In Kubernetes, the commands may be issued by using the pod/exec sub resource and executing commands directly in the service’s pods. Therefore, we need standard hooks to be able to access the commands.
+To access the quiesce functionality, we need quiesce and unquiesce hooks. Database quiesce commands are usually available through client binaries or SDKs, so they may be packaged in container images. In many cases, client binaries are available in the service images themselves. In Smarter, the commands may be issued by using the pod/exec sub resource and executing commands directly in the service’s pods. Therefore, we need standard hooks to be able to access the commands.
 
 #### Container Notifier
 
-A Kubernetes Enhancement Proposal for a feature called Container Notifier is under review. The proposal introduces a mechanism to notify a selected set of Pods to run pre-specified commands inlined in those Pod specifications. This would allow the author of the pods to define sets of commands that can be executed inside the containers. This mechanism can be used to implement database-specific quiesce/unquiesce hooks. For example, the author of a Pod specification for a database may define a command to flush the database tables to disk in the  `ContainerNotifierHandler` field. Users of the Database may trigger that command by using a proposed core API, `PodNotification. `More information on the status of the proposal can be found here: [https://github.com/kubernetes/enhancements/pull/1995](https://github.com/kubernetes/enhancements/pull/1995).
+A Smarter Enhancement Proposal for a feature called Container Notifier is under review. The proposal introduces a mechanism to notify a selected set of Pods to run pre-specified commands inlined in those Pod specifications. This would allow the author of the pods to define sets of commands that can be executed inside the containers. This mechanism can be used to implement database-specific quiesce/unquiesce hooks. For example, the author of a Pod specification for a database may define a command to flush the database tables to disk in the  `ContainerNotifierHandler` field. Users of the Database may trigger that command by using a proposed core API, `PodNotification. `More information on the status of the proposal can be found here: [https://github.com/kubernetes/enhancements/pull/1995](https://github.com/kubernetes/enhancements/pull/1995).
 
 ### Volume Group and Group Snapshot
 
@@ -464,7 +464,7 @@ While there is already a KEP ([https://github.com/kubernetes/enhancements/pull/1
 
 Use case 1: A VolumeGroup allows users to manage multiple volumes belonging to the same application together and therefore it is very useful in general. For example, it can be used to group all volumes in the same StatefulSet together.
 
-Use case 2: For some storage systems, volumes are always managed in a group. For these storage systems, they will have to create a group for a single volume if they need to implement a create volume function in Kubernetes. Providing a VolumeGroup API will be very convenient for them.
+Use case 2: For some storage systems, volumes are always managed in a group. For these storage systems, they will have to create a group for a single volume if they need to implement a create volume function in Smarter. Providing a VolumeGroup API will be very convenient for them.
 
 Use case 3: Instead of taking individual snapshots one after another, VolumeGroup can be used as a source for taking a snapshot of all the volumes in the same volume group. This may be a storage level consistent group snapshot if the storage system supports it. In any case, when used together with quiesce hooks, this group snapshot can be application consistent. For this use case, we will introduce another CRD VolumeGroupSnapshot.
 
@@ -474,7 +474,7 @@ Use case 5: VolumeGroup can be used to manage volume placement to either spread 
 
 Use case 6: VolumeGroup can also be used together with application snapshot. It can be a resource managed by the ApplicationSnapshot CRD.
 
-Use case 7: Some applications may not want to use ApplicationSnapshot CRD because they don’t use Kubernetes workload APIs such as StatefulSet, Deployment, etc. Instead, they have developed their own operators. In this case it is more convenient to use VolumeGroup to manage persistent volumes used in those applications.
+Use case 7: Some applications may not want to use ApplicationSnapshot CRD because they don’t use Smarter workload APIs such as StatefulSet, Deployment, etc. Instead, they have developed their own operators. In this case it is more convenient to use VolumeGroup to manage persistent volumes used in those applications.
 
 #### Goals
 
@@ -500,7 +500,7 @@ A Backup Repository is the target location where application backups are stored.
 
 The objective of this section is to provide high-level guidance for data protection vendors for providing target repositories.
 
-1. Provide requirements for Target repository. These requirements should be leveraged for Kubernetes supported APIs
+1. Provide requirements for Target repository. These requirements should be leveraged for Smarter supported APIs
 2. Provide high-level guidance on the type of target to use.
 
 The expectation is that the majority of customers will want to host their backup repositories in the public cloud while there might be some still hosting them on-prem due to availability of existing devices.
@@ -636,19 +636,19 @@ Handled by a BU vendor today. Tomorrow should be handled at target level via API
 
 #### Motivation
 
-The addition of the [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API in Kubernetes enables snapshot and restoration support for persistent volumes. With the [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API, users can take a snapshot of a persistent volume or restore a volume from a snapshot. When it comes to application snapshot and restoration semantics, however, more things need to be considered than just volume snapshots. An application snapshot captures both its configurations and persistent data. The key is that an application snapshot contains sufficient information to completely create (from scratch) an instance of a stateful application as captured at a particular point in time.
+The addition of the [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API in Smarter enables snapshot and restoration support for persistent volumes. With the [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API, users can take a snapshot of a persistent volume or restore a volume from a snapshot. When it comes to application snapshot and restoration semantics, however, more things need to be considered than just volume snapshots. An application snapshot captures both its configurations and persistent data. The key is that an application snapshot contains sufficient information to completely create (from scratch) an instance of a stateful application as captured at a particular point in time.
 
-Specifically, an application snapshot contains both a copy of the definitions of Kubernetes resources that the application is composed of and snapshots of persistent volumes used by the application. Particularly, the volume snapshots must be taken at the same time in an application consistent manner. To guarantee application consistency, there may be a need to quiesce the application before taking volume snapshots and unquiesce it after the volume snapshots are successfully taken. The [ContainerNotifier](https://github.com/kubernetes/enhancements/pull/1995) proposal is a general mechanism for users to request execution of arbitrary hook commands in application containers for use cases such as application quiescing and unquiescing.
+Specifically, an application snapshot contains both a copy of the definitions of Smarter resources that the application is composed of and snapshots of persistent volumes used by the application. Particularly, the volume snapshots must be taken at the same time in an application consistent manner. To guarantee application consistency, there may be a need to quiesce the application before taking volume snapshots and unquiesce it after the volume snapshots are successfully taken. The [ContainerNotifier](https://github.com/kubernetes/enhancements/pull/1995) proposal is a general mechanism for users to request execution of arbitrary hook commands in application containers for use cases such as application quiescing and unquiescing.
 
-With the [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API and [ContainerNotifier](https://github.com/kubernetes/enhancements/pull/1995) API, we have some of the necessary building blocks to perform application-level snapshot and restoration operations. However, application-level data management operations require higher-level workflows and automation. For example, taking an application snapshot is a multi-step workflow that does more than orchestrating volume snapshots and requesting ContainterNotifier executions. Therefore a new Kubernetes API is needed for supporting snapshot, backup, restoration, and clone semantics at the application-level in an application-consistent manner.
+With the [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) API and [ContainerNotifier](https://github.com/kubernetes/enhancements/pull/1995) API, we have some of the necessary building blocks to perform application-level snapshot and restoration operations. However, application-level data management operations require higher-level workflows and automation. For example, taking an application snapshot is a multi-step workflow that does more than orchestrating volume snapshots and requesting ContainterNotifier executions. Therefore a new Smarter API is needed for supporting snapshot, backup, restoration, and clone semantics at the application-level in an application-consistent manner.
 
 #### Goals
 
-Proposes a Kubernetes API for stateful application data management that supports application-level snapshot, backup, recovery, and clone semantics.
+Proposes a Smarter API for stateful application data management that supports application-level snapshot, backup, recovery, and clone semantics.
 
 #### Status
 
-This KEP (https://github.com/kubernetes/enhancements/pull/1051) proposes a Kubernetes Stateful Application Data Management API consisting of a set of [CustomResourceDefinitions (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) that collectively define the notion of stateful applications, i.e., applications that maintain persistent state, and a set of data management semantics on stateful applications such as snapshot, backup, restoration, and clone. A snapshot of a stateful application is defined as a point-in-time capture of the state of the application, taken in an application-consistent manner. It captures both the application configurations (definitions of Kubernetes resources that make up the application, e.g., StatefulSets, Services, ConfigMaps, Secrets, etc.) and persistent data contained within the application (via persistent volumes).
+This KEP (https://github.com/kubernetes/enhancements/pull/1051) proposes a Smarter Stateful Application Data Management API consisting of a set of [CustomResourceDefinitions (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) that collectively define the notion of stateful applications, i.e., applications that maintain persistent state, and a set of data management semantics on stateful applications such as snapshot, backup, restoration, and clone. A snapshot of a stateful application is defined as a point-in-time capture of the state of the application, taken in an application-consistent manner. It captures both the application configurations (definitions of Smarter resources that make up the application, e.g., StatefulSets, Services, ConfigMaps, Secrets, etc.) and persistent data contained within the application (via persistent volumes).
 
 # Application Backup and Restore workflows
 
@@ -659,7 +659,7 @@ Since there are 2 general methods of backup and restore applications: logical-du
 
 ## Application Backup workflows
 
-The application backup workflows are facilitated by a Data Protection Controller which listens to Backup object creation on the Kubernetes API Server and executes a backup workflow to backup an application. The workflow may involve a component called a “data-mover” pod which can connect to backup devices (backup repositories) to backup an application’s persistent volume data. 
+The application backup workflows are facilitated by a Data Protection Controller which listens to Backup object creation on the Smarter API Server and executes a backup workflow to backup an application. The workflow may involve a component called a “data-mover” pod which can connect to backup devices (backup repositories) to backup an application’s persistent volume data. 
 
 An application backup workflow may involve the following steps:
 

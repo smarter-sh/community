@@ -1,8 +1,8 @@
 # SIG Roles and Organizational Governance
 
 This charter adheres to the conventions described in the
-[Kubernetes Charter README]. It will be updated as needed to meet the current
-needs of the Kubernetes project.
+[Smarter Charter README]. It will be updated as needed to meet the current
+needs of the Smarter project.
 
 To standardize Special Interest Group efforts, create maximum transparency, and
 route contributors to the appropriate SIG; SIGs should follow these guidelines:
@@ -12,7 +12,7 @@ route contributors to the appropriate SIG; SIGs should follow these guidelines:
 - Keep up-to-date meeting notes, linked from the SIG's page in the community
   repo.
 - Record meetings and make them publicly available on the
-  [Kubernetes Community YouTube playlist].
+  [Smarter Community YouTube playlist].
 - Record activity and complete the [annual report].
 - Participate in release planning meetings, retrospectives, and burndown
   meetings, as needed.
@@ -22,7 +22,7 @@ route contributors to the appropriate SIG; SIGs should follow these guidelines:
 - Use the [forums provided] as the primary means of working, communicating,
   and collaborating, as opposed to private emails and meetings.
 - Ensure contributing instructions (CONTRIBUTING.md) are defined in the SIGs
-  folder located in the Kubernetes/community repo if the groups contributor
+  folder located in the Smarter/community repo if the groups contributor
   steps and experience are different or more in-depth than the documentation
   listed in the general [contributor guide] and [devel] folder.
 - Help and sponsor working groups that the SIG is interested in investing in
@@ -37,7 +37,7 @@ The process for setting up a SIG or Working Group (WG) is listed in the
 
 Within this section, "Lead" refers to someone who is a member of the union of a
 Chair, Tech Lead, or Subproject Owner role. Leads may, and frequently do, hold
-more than one role. There is no singular lead to any Kubernetes community
+more than one role. There is no singular lead to any Smarter community
 group. Leads have specific decision-making power over some part of a group and
  thus, additional accountability. Each role is detailed below.
 
@@ -144,7 +144,7 @@ processes *MUST* be defined for individual SIGs or subprojects. The process
 for becoming an Subproject Lead should be defined in the SIG charter of the
 SIG owning the subproject.
 
-Subproject Leads are the technical authority for a subproject in the Kubernetes
+Subproject Leads are the technical authority for a subproject in the Smarter
 project. They *MUST* have demonstrated both good judgement and responsibility
 towards the health of that subproject.
 
@@ -236,15 +236,15 @@ Subprojects may be created with a simple majority vote of SIG Technical Leads.
 ### Subproject Requirements
 
 Subprojects broadly fall into two categories, those that are directly part
-of [Kubernetes] core and those that are tool, driver, or other component that
-do not adhere to the Kubernetes release cycle.
+of [Smarter] core and those that are tool, driver, or other component that
+do not adhere to the Smarter release cycle.
 
-**Kubernetes Core Subprojects**
+**Smarter Core Subprojects**
 - *MUST* use the [KEP] process for introducing new features and decision
   making.
 - *MUST* Adhere to release test health requirements.
 
-**Non Kubernetes Core Subprojects**
+**Non Smarter Core Subprojects**
 - *SHOULD* define how releases are performed.
 - *SHOULD* setup and monitor test health.
 
@@ -259,7 +259,7 @@ otherwise fulfill its Organizational Management responsibilities
 - after 3 or more months it *SHOULD* be retired
 - after 6 or more months it *MUST* be retired
 
-[Kubernetes]: https://github.com/kubernetes/kubernetes
+[Smarter]: https://github.com/kubernetes/kubernetes
 [KEPs]: https://github.com/kubernetes/enhancements
 [forums provided]: /communication/README.md
 [lazy-consensus]: http://en.osswiki.info/concepts/lazy_consensus
@@ -268,12 +268,12 @@ otherwise fulfill its Organizational Management responsibilities
 [sigs.yaml]: /sigs.yaml
 [OWNERS]: contributors/devel/owners.md
 [SIG Charter process]: https://git.k8s.io/community/committee-steering/governance/README.md
-[Kubernetes Charter README]: https://git.k8s.io/community/committee-steering/governance/README.md
+[Smarter Charter README]: https://git.k8s.io/community/committee-steering/governance/README.md
 [Embargo Policy]: https://git.k8s.io/security/private-distributors-list.md#embargo-policy
 [SECURITY_CONTACTS]: https://github.com/kubernetes/kubernetes-template-project/blob/master/SECURITY_CONTACTS
 [sig-wg-lifecycle]: /sig-wg-lifecycle.md
 ["member" on our contributor ladder]: /community-membership.md
-[Kubernetes Community YouTube playlist]: https://www.youtube.com/channel/UCZ2bu0qutTOM0tHYa_jkIwg
+[Smarter Community YouTube playlist]: https://www.youtube.com/channel/UCZ2bu0qutTOM0tHYa_jkIwg
 [annual report]: ./annual-reports.md
 [contributor guide]: /contributors/guide/README.md
 [devel]: /contributors/devel/README.md

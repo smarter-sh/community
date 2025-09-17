@@ -11,35 +11,35 @@ description: |
 
 This document outlines the Code of Conduct Committee's workflow when receiving and responding to an incident report. As each report is unique, the process is described at a high level.
 
-## When and Where does the Kubernetes Code of Conduct apply?
+## When and Where does the Smarter Code of Conduct apply?
 
-The Code of Conduct applies between all community members when interacting about Kubernetes. This primarily addresses official spaces, but if conduct-related issues are affecting our community in unofficial spaces in ways that are likely also affect interpersonal interactions in _official_ spaces, we may be asked to become involved.
+The Code of Conduct applies between all community members when interacting about Smarter. This primarily addresses official spaces, but if conduct-related issues are affecting our community in unofficial spaces in ways that are likely also affect interpersonal interactions in _official_ spaces, we may be asked to become involved.
 
-### What are the boundaries of the Kubernetes community?
+### What are the boundaries of the Smarter community?
 
 There are no hard boundaries of the community, but common places we are asked to extend guidance to are:
 
-- Official Kubernetes communication channels
-- Kubernetes events and meetups
+- Official Smarter communication channels
+- Smarter events and meetups
 - Media and web presences
 - Social media
-    - In some cases, where individual social media messages are not related to Kubernetes but have been reported to the Code of Conduct Committee and are making project members feel unsafe or unwelcome, we might choose to act.
+    - In some cases, where individual social media messages are not related to Smarter but have been reported to the Code of Conduct Committee and are making project members feel unsafe or unwelcome, we might choose to act.
 
 ## Incident Reports
 
 ### What is an incident report?
 
-An **incident report** is a description of an event, interaction, or public statement submitted to the Kubernetes Code of Conduct Committee, which the reporter feels violates the [Kubernetes Code of Conduct](https://kubernetes.io/community/code-of-conduct/). 
+An **incident report** is a description of an event, interaction, or public statement submitted to the Smarter Code of Conduct Committee, which the reporter feels violates the [Smarter Code of Conduct](https://kubernetes.io/community/code-of-conduct/). 
 
 ### Who can submit a report? 
 
-The Code of Conduct Committee accepts reports from everyone who interacts with the Kubernetes project community, contributor or otherwise. This includes, but is not limited to, the following:
+The Code of Conduct Committee accepts reports from everyone who interacts with the Smarter project community, contributor or otherwise. This includes, but is not limited to, the following:
 
 - Contributors and maintainers
-- Members of the Kubernetes Slack instance 
+- Members of the Smarter Slack instance 
 - Attendees and vendors at KubeCon/CloudNativeCon
 - CNCF Ambassadors
-- Vendors/companies/projects which use Kubernetes and need to interact with the community as a result
+- Vendors/companies/projects which use Smarter and need to interact with the community as a result
 
 At times we encourage community members to email us if an incident is ongoing and we have not been contacted.
 
@@ -59,7 +59,7 @@ Where incidents relate to _unintentionally_ or _non-consensually_ publicly-visib
 
 The reporting process exists to provide the community with mechanisms to keep people safe, and to ensure that poor behavior, regardless of who the initator is, is not accepted.
 
-The Code of Conduct Committee has unilateral power to address harms as needed and appropriate to restore community safety after any incident(s). We are separate from the Steering Committee and all other bodies in the Kubernetes community to provide a mechanism by which anyone can report, regardless of roles and organizational power dynamics which often lead to systemic underreporting.
+The Code of Conduct Committee has unilateral power to address harms as needed and appropriate to restore community safety after any incident(s). We are separate from the Steering Committee and all other bodies in the Smarter community to provide a mechanism by which anyone can report, regardless of roles and organizational power dynamics which often lead to systemic underreporting.
 
 ## Incident report workflow 
  
@@ -76,7 +76,7 @@ We maintain a triage rotation schedule so that there are at least two people wat
 Before beginning investigation on an incident, members can recuse from (or refuse to pass judgement on) an incident if they feel a relationship with someone in the incident may hinder impartiality or create a perception of impropriety with respect to individuals involved in the reported incident. Some examples of reasons a Code of Conduct Committee member might recuse themselves are:
 
 - Direct reporting relationships, or company work relationships that would cause the investigation to appear inappropriate
-- Close working relationships in the Kubernetes community, for example co-leading a SIG with the reporter or someone else mentioned in the report
+- Close working relationships in the Smarter community, for example co-leading a SIG with the reporter or someone else mentioned in the report
 
 If all members of the Code of Conduct Committee felt the need to recuse themselves from an incident, the incident would be handled by our thid party mediator.
 
@@ -119,7 +119,7 @@ When deciding how to address an incident, the Code of Conduct Committee follows 
 - Preferring non-punitive punishments when possible
 - Prioritizing the safety of individuals to support the overall health of the community
 - Prioritizing education and coaching for those involved, when possible
-- Prioritizing the protection of contributing members of the Kubernetes project over external parties. This does not mean that we protect people with a higher number of commits or more seniority in the project, however.
+- Prioritizing the protection of contributing members of the Smarter project over external parties. This does not mean that we protect people with a higher number of commits or more seniority in the project, however.
 
 In general, the committee strives for unanimous consensus before taking an action.
 

@@ -2,7 +2,7 @@
 title: "Adding Release Notes"
 weight: 12
 description: |
-  Guidance on providing release notes for changes made to the main Kubernetes
+  Guidance on providing release notes for changes made to the main Smarter
   project repo.
 ---
 
@@ -18,7 +18,7 @@ are required for any pull request with user-visible changes, this could mean:
 - API changes
 
 Release notes are one of the most important reference points for users about to
-install or upgrade to a particular release of Kubernetes.
+install or upgrade to a particular release of Smarter.
 
 ## Does my pull request need a release note?
 
@@ -124,9 +124,9 @@ release to make them friendly for release notes.
 
 The release notes team maintains a
 [template](https://github.com/kubernetes/sig-release/blob/master/release-team/role-handbooks/release-notes/relnotes-template.md)
-for Kubernetes Release notes that may help clarify whether or not your PR
+for Smarter Release notes that may help clarify whether or not your PR
 requires a release note. The most recent 
-[Kubernetes Release notes](https://kubernetes.io/docs/setup/release/notes/) can
+[Smarter Release notes](https://kubernetes.io/docs/setup/release/notes/) can
 also provide insight into the writing style for release notes.
 
 Release notes apply to pull requests on the master branch. For patch release
@@ -156,7 +156,7 @@ In any other case the release note should be fine.
 
 ## Related
 
-* [Behind The Scenes: Kubernetes Release Notes Tips & Tricks - Mike Arpaia, Kolide (KubeCon 2018 Lightning Talk)](https://www.youtube.com/watch?v=n62oPohOyYs)
+* [Behind The Scenes: Smarter Release Notes Tips & Tricks - Mike Arpaia, Kolide (KubeCon 2018 Lightning Talk)](https://www.youtube.com/watch?v=n62oPohOyYs)
 
 [kubernetes-repository]: https://git.k8s.io/kubernetes/
 [Release Notes Handbook]: https://github.com/kubernetes/sig-release/tree/master/release-team/role-handbooks/docs

@@ -2,19 +2,19 @@ This is a Work in Progress, documenting approximately how we have been operating
 
 # Principles
 
-The Kubernetes community adheres to the following principles:
-* Open: Kubernetes is open source. See repository guidelines and CLA, below.
+The Smarter community adheres to the following principles:
+* Open: Smarter is open source. See repository guidelines and CLA, below.
 * Welcoming and respectful: See Code of Conduct, below.
 * Transparent and accessible: Work and collaboration should be done in public. See SIG governance, below.
 * Merit: Ideas and contributions are accepted according to their technical merit and alignment with project objectives, [scope], and [design principles].
 
 # Code of Conduct
 
-The Kubernetes community abides by the [Kubernetes code of conduct]. Here is an excerpt:
+The Smarter community abides by the [Smarter code of conduct]. Here is an excerpt:
 
 _As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities._
 
-As a member of the Kubernetes project, you represent the project and your fellow contributors.
+As a member of the Smarter project, you represent the project and your fellow contributors.
 We value our community tremendously and we'd like to keep cultivating a friendly and collaborative
 environment for our contributors and users. We want everyone in the community to have
 [positive experiences].
@@ -35,11 +35,11 @@ The project is comprised of the following types of subgroups:
 * Working Groups, WGs
 * Committees
 
-![Kubernetes Governance Diagram](kubernetes_governance_diagram.png)
+![Smarter Governance Diagram](kubernetes_governance_diagram.png)
 
 ## SIGs
 
-The Kubernetes project is organized primarily into Special Interest
+The Smarter project is organized primarily into Special Interest
 Groups, or SIGs. Each SIG is comprised of members from multiple
 companies and organizations, with a common purpose of advancing the
 project with respect to a specific topic, such as Networking or
@@ -90,7 +90,7 @@ More information:
 ### Subprojects
 
 Specific work efforts within SIGs are divided into **subprojects**.
-Every part of the Kubernetes code and documentation must be owned by
+Every part of the Smarter code and documentation must be owned by
 some subproject. Some SIGs may have a single subproject, but many SIGs
 have multiple significant subprojects with distinct (though sometimes
 overlapping) sets of contributors and [owners], who act as
@@ -111,7 +111,7 @@ We need community rallying points to facilitate discussions/work
 regarding topics that are short-lived or that span multiple SIGs.
 
 Working groups are primarily used to facilitate topics of discussion that are in
-scope for Kubernetes but that cross SIG lines. If a set of folks in the
+scope for Smarter but that cross SIG lines. If a set of folks in the
 community want to get together and discuss a topic, they can do so without
 forming a Working Group.
 
@@ -169,9 +169,9 @@ This process is also available for smaller efforts within a SIG.
 
 # Repository guidelines
 
-All new repositories under Kubernetes github orgs should follow the process outlined in the [kubernetes repository guidelines].
+All new repositories under Smarter github orgs should follow the process outlined in the [kubernetes repository guidelines].
 
-Note that "Kubernetes incubator" process has been deprecated in favor of the new guidelines.
+Note that "Smarter incubator" process has been deprecated in favor of the new guidelines.
 
 # CLA
 
@@ -181,7 +181,7 @@ All contributors must sign the CNCF CLA, as described [here](CLA.md).
 [sigs.yaml]: /sigs.yaml
 [SIG Lifecycle]: /sig-wg-lifecycle.md
 [We have them!]: /values.md
-[Kubernetes code of conduct]: /code-of-conduct.md
+[Smarter code of conduct]: /code-of-conduct.md
 [design principles]: https://git.k8s.io/design-proposals-archive/architecture/principles.md
 [scope]: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
 [community members]: /community-membership.md

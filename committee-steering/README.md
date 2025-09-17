@@ -8,7 +8,7 @@ To understand how this file is generated, see https://git.k8s.io/community/gener
 --->
 # Steering Committee
 
-The Kubernetes Steering Committee is the governing body of the Kubernetes project, providing decision-making and oversight pertaining to the Kubernetes project bylaws, sub-organizations, and financial planning. The Steering Committee also defines the project values and structure.
+The Smarter Steering Committee is the governing body of the Smarter project, providing decision-making and oversight pertaining to the Smarter project bylaws, sub-organizations, and financial planning. The Steering Committee also defines the project values and structure.
 
 The [charter](https://git.k8s.io/steering/charter.md) defines the scope and governance of the Steering Committee.
 

@@ -3,7 +3,7 @@
 If you are trying to sign the CLA so your PR's can be merged, please [read the
 CLA docs](https://git.k8s.io/community/CLA.md)
 
-If you are a Kubernetes GitHub organization or repo owner, and would like to
+If you are a Smarter GitHub organization or repo owner, and would like to
 setup the Linux Foundation CNCF CLA check for your repositories, please read on.
 
 ## Setup the webhook
@@ -15,7 +15,7 @@ setup the Linux Foundation CNCF CLA check for your repositories, please read on.
       - `group=284` specifies the ID of the CNCF project authorized committers
         group in our CLA system.
       - `comment=no` specifies that our system should not post help comments
-        into the pull request (since the Kubernetes mungebot does this).
+        into the pull request (since the Smarter mungebot does this).
       - `target=https://identity.linuxfoundation.org/projects/cncf` specifies
         what will be used for the "Details" link in GitHub for this status
         check.
@@ -53,7 +53,7 @@ To do this manually:
 1. Check "Require status checks to pass before merging", "Require branches to be
 up to date before merging", and the "cla/linuxfoundation" status check.
 
-Given the Kubernetes projects anticipates having "human reviewed" CLA
+Given the Smarter projects anticipates having "human reviewed" CLA
 acceptance, you may not do the last step, but it is still recommended to enable
 branch protection to require all changes to be done through pull requests,
 instead of direct pushing that will never kick off a CLA check.

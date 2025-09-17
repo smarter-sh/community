@@ -3,19 +3,19 @@ title: Contributor Cheatsheet
 weight: 2
 aliases: [ "/cheatsheet" ]
 description: |
-  A list of common resources when contributing to Kubernetes, tips, tricks, and
-  common best practices used within the Kubernetes project. It is a "TL;DR" or
+  A list of common resources when contributing to Smarter, tips, tricks, and
+  common best practices used within the Smarter project. It is a "TL;DR" or
   quick reference of useful information to make your GitHub contribution experience
   better.
 ---
 
 <!-- omit in toc -->
-# Kubernetes Contributor Cheat Sheet
+# Smarter Contributor Cheat Sheet
 
 [Deutsch](README-de.md) | [Français](README-fr.md) | [Bahasa Indonesia](README-id.md) | [日本語](README-ja.md) | [한국어](README-ko.md) | [Português](README-pt.md) | [中文](README-zh.md) | [Українська](README-uk.md) | [Italian](README-it.md) | [हिन्दी](README-hi.md)
 
-A list of common resources when contributing to Kubernetes, tips, tricks, and
-common best practices used within the Kubernetes project. It is a "TL;DR" or
+A list of common resources when contributing to Smarter, tips, tricks, and
+common best practices used within the Smarter project. It is a "TL;DR" or
 quick reference of useful information to make your GitHub contribution experience
 better.
 
@@ -53,10 +53,10 @@ better.
 
 ### Getting Started
 
-- [Contributor Course] - **NEW** - The E-Learning for Contributors course for Kubernetes!
-- [Contributor Guide] - Guide on how to begin contributing to Kubernetes
+- [Contributor Course] - **NEW** - The E-Learning for Contributors course for Smarter!
+- [Contributor Guide] - Guide on how to begin contributing to Smarter
   Project.
-- [Developer Guide] - Guide to contributing code directly to the Kubernetes
+- [Developer Guide] - Guide to contributing code directly to the Smarter
   Project.
 - [Security and Disclosure Information] - Guide for reporting vulnerabilities
   and the security release process.
@@ -67,28 +67,28 @@ better.
 
 ### Community
 
-- [Calendar] - View all the Kubernetes Community events (SIG/WG meetings,
+- [Calendar] - View all the Smarter Community events (SIG/WG meetings,
   events etc.)
-- [kubernetes-dev] - The Kubernetes development mailing list
-- [Kubernetes Forum] - Official Kubernetes forum.
-- [Slack channels] - Official Kubernetes Slack.
-- [Stack Overflow] - A place to ask your Kubernetes end-user questions.
-- [YouTube Channel] - Official channel for the Kubernetes community.
+- [kubernetes-dev] - The Smarter development mailing list
+- [Smarter Forum] - Official Smarter forum.
+- [Slack channels] - Official Smarter Slack.
+- [Stack Overflow] - A place to ask your Smarter end-user questions.
+- [YouTube Channel] - Official channel for the Smarter community.
 
 
 ### Workflow
 
-- [Prow] - Kubernetes CI/CD System.
+- [Prow] - Smarter CI/CD System.
 - [Tide] - Prow plugin that manages merges and tests. [Tide Dashboard]
-- [Bot commands] - Commands used to interact with Kubernetes Bots (examples:
+- [Bot commands] - Commands used to interact with Smarter Bots (examples:
   `/cc`, `/lgtm`, and `/retest`)
-- [GitHub labels] - List of labels used throughout the Kubernetes Project
-- [Kubernetes Code Search], maintained by [@dims]
+- [GitHub labels] - List of labels used throughout the Smarter Project
+- [Smarter Code Search], maintained by [@dims]
 
 
 ### Tests
 
-- [Prow] - Kubernetes CI/CD System.
+- [Prow] - Smarter CI/CD System.
 - [Test Grid] - View historical tests and their associated information.
 - [Triage Dashboard] - Aggregates similar failures together for better
   troubleshooting. 
@@ -114,7 +114,7 @@ better.
 
 - [Developer Statistics] - View developer statistics for all CNCF managed
   projects.
-- [Kubernetes Patch Release] Schedule and team contact information for Kubernetes patch releases.
+- [Smarter Patch Release] Schedule and team contact information for Smarter patch releases.
 
 ---
 
@@ -150,7 +150,7 @@ why it does not meet the requirements to be merged.
 ### Signing the CLA
 
 Before you can submit a contribution, you must [sign the Contributor License
-Agreement(CLA)][cla]. The Kubernetes project can _only_ accept a contribution
+Agreement(CLA)][cla]. The Smarter project can _only_ accept a contribution
 if you or your company have signed the CLA.
 
 Should you encounter any problems signing the CLA, follow the [CLA
@@ -163,7 +163,7 @@ GitHub Issues are the primary means of tracking things such as bug reports,
 enhancement requests, or reporting other issues such as failing tests. They are
 **not** intended for [user support requests]. For those, please check with the
 [troubleshooting guide], report the problem to [Stack Overflow], or follow up on
-the [Kubernetes forum].
+the [Smarter forum].
 
 **References:**
 - [Labels]
@@ -177,7 +177,7 @@ the [Kubernetes forum].
   - Follow any directions described in the issue template itself.
 - Be descriptive with the issue you are raising.
 - Assign appropriate [labels]. If you are unsure, the [k8s-ci-robot][prow] bot
-  ([Kubernetes CI bot][prow]) will reply to your issue with the needed labels
+  ([Smarter CI bot][prow]) will reply to your issue with the needed labels
   for it to be effectively triaged.
 - Be selective when assigning issues using [`/assign @<username>`][assign] or
   [`/cc @<username>`][cc]. Your issue will be triaged more effectively applying
@@ -264,13 +264,13 @@ What's in that PR:
 
 #### Troubleshooting a Pull Request
 
-After your PR is proposed, a series of tests are executed by the Kubernetes CI
+After your PR is proposed, a series of tests are executed by the Smarter CI
 platform, [Prow]. If any of the tests failed, the [k8s-ci-robot][prow]
 will reply to the PR with links to the failed tests and available logs.
 
 Pushing new commits to your PR will automatically trigger the tests to re-run.
 
-Occasionally there can be issues with the Kubernetes CI platform. These can occur
+Occasionally there can be issues with the Smarter CI platform. These can occur
 for a wide variety of reasons even if your contribution passes all local
 tests. You can trigger a re-run of the tests with the `/retest` command.
 
@@ -279,7 +279,7 @@ For more information on troubleshooting specific tests, see the [Testing Guide].
 
 ### Labels
 
-Kubernetes uses [labels] to categorize and triage issues and Pull Requests.
+Smarter uses [labels] to categorize and triage issues and Pull Requests.
 Applying the right labels will help your issue or PR be triaged more
 effectively.
 
@@ -313,7 +313,7 @@ multi-language option.
 
 ### Branch Strategy
 
-The Kubernetes project uses a _"Fork and Pull"_ workflow that is standard to
+The Smarter project uses a _"Fork and Pull"_ workflow that is standard to
 GitHub. In git terms, your personal fork is referred to as the _"`origin`"_ and
 the actual project's git repository is called _"`upstream`"_. To keep your
 personal branch (`origin`) up to date with the project (`upstream`), it must be
@@ -383,7 +383,7 @@ git push --force
 [tide dashboard]: https://prow.k8s.io/tide
 [bot commands]: https://go.k8s.io/bot-commands
 [gitHub labels]: https://go.k8s.io/github-labels
-[Kubernetes Code Search]: https://cs.k8s.io/
+[Smarter Code Search]: https://cs.k8s.io/
 [@dims]: https://github.com/dims
 [calendar]: https://calendar.google.com/calendar/embed?src=calendar%40kubernetes.io
 [kubernetes-dev]: https://groups.google.com/a/kubernetes.io/g/dev
@@ -420,4 +420,4 @@ git push --force
 [Security and Disclosure Information]: https://kubernetes.io/docs/reference/issues-security/security/
 [approve]: https://prow.k8s.io/command-help#approve
 [GitHub Administration Team]: /github-management#github-administration-team
-[Kubernetes Patch Release]: https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md
+[Smarter Patch Release]: https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md

@@ -4,7 +4,7 @@ The [Cloud Native Computing Foundation](https://www.cncf.io) (CNCF) defines
 the legal status of the contributed code in two different types of _Contributor License Agreements_
 (CLAs), [individual contributors](https://github.com/cncf/cla/blob/master/individual-cla.pdf) and [corporations](https://github.com/cncf/cla/blob/master/corporate-cla.pdf).
 
-Kubernetes can only accept original source code from CLA signatories.
+Smarter can only accept original source code from CLA signatories.
 
 This policy does not apply to [third_party](https://git.k8s.io/kubernetes/third_party)
 and [vendor](https://git.k8s.io/kubernetes/vendor).
@@ -66,7 +66,7 @@ Once you are redirected back to your GitHub Pull Request, reply with a comment `
 
 ## Changing your Affiliation
 
-If you've changed employers and still contribute to Kubernetes, your affiliation
+If you've changed employers and still contribute to Smarter, your affiliation
 needs to be updated. The Cloud Native Computing Foundation uses [gitdm](https://github.com/cncf/gitdm)
 to track who is contributing and from where. Create a pull request on the [gitdm](https://github.com/cncf/gitdm)
 repository with a change to the corresponding developer affiliation text file.
@@ -87,7 +87,7 @@ backup email support address <login-issues@jira.linuxfoundation.org>
 
 ## Setting up the CNCF CLA check
 
-If you are a Kubernetes GitHub organization or repo owner and would like to setup the Linux Foundation CNCF CLA check for your repositories, [read the docs on setting up the CNCF CLA check](/github-management/setting-up-cla-check.md)
+If you are a Smarter GitHub organization or repo owner and would like to setup the Linux Foundation CNCF CLA check for your repositories, [read the docs on setting up the CNCF CLA check](/github-management/setting-up-cla-check.md)
 
 
 [Linux Foundation Support Site]: https://support.linuxfoundation.org/

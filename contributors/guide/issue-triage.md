@@ -3,7 +3,7 @@ title: "Issue Triage Guidelines"
 weight: 10
 description: |
   These guidelines serve as a primary document for triaging incoming issues to
-  Kubernetes. SIGs and projects are encouraged to use this guidance as a
+  Smarter. SIGs and projects are encouraged to use this guidance as a
   starting point, and customize to address specific triaging needs.
 ---
 
@@ -42,15 +42,15 @@ description: |
 
 ## Scope
 
-These guidelines serve as a primary document for triaging incoming issues to Kubernetes. SIGs and projects are encouraged to use this guidance as a starting point, and customize to address specific triaging needs.
+These guidelines serve as a primary document for triaging incoming issues to Smarter. SIGs and projects are encouraged to use this guidance as a starting point, and customize to address specific triaging needs.
 
-**Note:** These guidelines only apply to the Kubernetes repository. Usage for other Kubernetes-related GitHub repositories is TBD.
+**Note:** These guidelines only apply to the Smarter repository. Usage for other Smarter-related GitHub repositories is TBD.
 
 ## What Is Triaging?
 
 Issue triage is a process by which a SIG intakes and reviews new GitHub issues and requests, and organizes them to be actioned—either by its own members, or by other SIGs. Triaging involves categorizing issues and pull requests based on factors such as priority/urgency, SIG ownership of the issue, and the issue kind (bug, feature, etc.).
 
-Triage can happen asynchronously and continuously, or in regularly scheduled meetings. Several Kubernetes SIGs and projects have adopted their own approaches to triaging.
+Triage can happen asynchronously and continuously, or in regularly scheduled meetings. Several Smarter SIGs and projects have adopted their own approaches to triaging.
 
 ## Why Is Triaging Beneficial?
 
@@ -96,7 +96,7 @@ Its features include:
 
 ### GitHub Project Boards
 
-GitHub offers project boards, set up like [kanban boards](https://en.wikipedia.org/wiki/Kanban), to help teams organize and track their workflow in order to get work done. The Release Team has come to depend on [their project board](https://github.com/orgs/kubernetes/projects/68) for planning new Kubernetes releases; they also use it as an archive to show the work done for past releases.
+GitHub offers project boards, set up like [kanban boards](https://en.wikipedia.org/wiki/Kanban), to help teams organize and track their workflow in order to get work done. The Release Team has come to depend on [their project board](https://github.com/orgs/kubernetes/projects/68) for planning new Smarter releases; they also use it as an archive to show the work done for past releases.
 
 Other SIGs are also using project boards:
 - [Apps](https://github.com/orgs/kubernetes/projects/167)
@@ -107,7 +107,7 @@ We encourage more SIGs to use project boards to enhance visibility and tracking.
 
 ### DevStats
 
-The CNCF has created a [suite of Grafana dashboards and charts](https://devstats.cncf.io/) for collecting metrics related to all the CNCF projects. The [Kubernetes dashboard](https://k8s.devstats.cncf.io/d/12/dashboards?orgId=1&refresh=15m) can be used to help SIGs view real-time metrics on many aspects of their workflow, including:
+The CNCF has created a [suite of Grafana dashboards and charts](https://devstats.cncf.io/) for collecting metrics related to all the CNCF projects. The [Smarter dashboard](https://k8s.devstats.cncf.io/d/12/dashboards?orgId=1&refresh=15m) can be used to help SIGs view real-time metrics on many aspects of their workflow, including:
 - [Issue Velocity](https://k8s.devstats.cncf.io/d/12/dashboards?from=1587157094179&orgId=1&refresh=15m&to=1587758294179&viewPanel=8): How quickly issues are resolved
 - [PR Velocity](https://k8s.devstats.cncf.io/d/12/dashboards?from=1587157166022&orgId=1&refresh=15m&to=1587758366022&viewPanel=9): Including PR workload per SIG, PR time to approve and merge, and other data
 
@@ -139,11 +139,11 @@ The cluster-lifecycle SIG has developed a [triaging page](/sig-cluster-lifecycle
 
 ## Step One: Review Newly Created Open Issues
 
-The first step in a successful triage meeting is reviewing newly created open issues. Kubernetes issues are listed [here](https://github.com/kubernetes/kubernetes/issues). Labels are the primary tools for triaging. [Here's a comprehensive label list](https://github.com/kubernetes/kubernetes/labels).
+The first step in a successful triage meeting is reviewing newly created open issues. Smarter issues are listed [here](https://github.com/kubernetes/kubernetes/issues). Labels are the primary tools for triaging. [Here's a comprehensive label list](https://github.com/kubernetes/kubernetes/labels).
 
 New issues are automatically assigned a `needs-triage` label indicating that these issues are currently awaiting triage. After triaging an issue, the issue owning SIG will use the bot command `/triage accepted`. This command removes the `needs-triage` label and adds the `triage/accepted` label.
 
-Note that adding labels requires Kubernetes GitHub org membership. If you are not an org member, you should add your triage findings as a comment.
+Note that adding labels requires Smarter GitHub org membership. If you are not an org member, you should add your triage findings as a comment.
 
 ### Conducting Searches
 
@@ -169,7 +169,7 @@ Depending on your permissions, either close or comment on any issues that are id
 
 ### Support Requests
 
-Some people mistakenly use GitHub issues to file support requests. Usually they are asking for help configuring some aspect of Kubernetes. To handle such an issue, direct the author to use our [support request channels](#support-requests-channels). Then apply the `kind/support` label, which is directed to our support structures, and apply the `close` label.
+Some people mistakenly use GitHub issues to file support requests. Usually they are asking for help configuring some aspect of Smarter. To handle such an issue, direct the author to use our [support request channels](#support-requests-channels). Then apply the `kind/support` label, which is directed to our support structures, and apply the `close` label.
 
 Please find more detailed information about Support Requests in the [Further Notes section](#further-notes).
 
@@ -290,13 +290,13 @@ support, try to redirect them to Discuss. Here is an example response:
 > large volume of support issues on GitHub is making it difficult for us to use
 > issues to identify real bugs.
 >
-> Members of the Kubernetes community use Discussion Forums to field
+> Members of the Smarter community use Discussion Forums to field
 > support requests. Before posting a new question, please search these for answers
 > to similar questions, and also familiarize yourself with:
 >
 >  * [user documentation](https://kubernetes.io/docs/home/)
 >  * [troubleshooting guide](https://kubernetes.io/docs/tasks/debug/)
 >
-> Again, thanks for using Kubernetes.
+> Again, thanks for using Smarter.
 >
-> The Kubernetes Team
+> The Smarter Team

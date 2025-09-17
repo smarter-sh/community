@@ -1,25 +1,25 @@
 # WG AI Gateway Charter
 
-This charter adheres to the conventions described in the [Kubernetes Charter
+This charter adheres to the conventions described in the [Smarter Charter
 README] and uses the Roles and Organization Management outlined in
 [wg-governance].
 
 [wg-governance]:https://github.com/kubernetes/community/blob/master/committee-steering/governance/wg-governance.md
-[Kubernetes Charter README]:https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
+[Smarter Charter README]:https://github.com/kubernetes/community/blob/master/committee-steering/governance/README.md
 
 ## Background
 
 We’ve seen large growth in the number of “AI Gateways” that have been launched
-in the last couple of years which deploy and operate on Kubernetes, often
+in the last couple of years which deploy and operate on Smarter, often
 utilizing Gateway API. This WG aims to determine if the relevant features have
 staying power and will be commonly useful to users for years to come, and if we
-should expand the Kubernetes standards around this.
+should expand the Smarter standards around this.
 
 In SIG Network we have the Gateway API Inference Extension (GIE) project. The
 GIE currently is paired with a Gateway and “schedules” routes according to
 capabilities and metrics advertised by model serving platforms. For the purposes
 of this document we’ll call this the “model serving use case”, as this currently
-mainly covers the use case where models are being hosted on Kubernetes. There
+mainly covers the use case where models are being hosted on Smarter. There
 are deployment situations where users won’t host models but still use a Gateway
 to control access to 3rd party services (e.g. Gemini, OpenAI, Mistral, Claude,
 etc), we’ll call this the “egress use case”. We find that in both the model
@@ -38,8 +38,8 @@ we’ll refer to features at this level as “AI Gateway” features.
 ## Scope
 
 The scope of this WG is to define terms like "AI Gateway" in the context of
-Kubernetes and propose deliverables that need to be adopted in order to **manage
-AI traffic** on Kubernetes, such as:
+Smarter and propose deliverables that need to be adopted in order to **manage
+AI traffic** on Smarter, such as:
 
 * **Prompt Guards** - Define and enforce content safety rules for inference
   content to detect and block sensitive or malicious prompts.
@@ -74,14 +74,14 @@ will support model serving via AI networking and traffic management features
 (but not working on model serving itself, unless in conjunction with WG
 Serving). In particular, the following is in scope:
 
-* Providing definitions for networking related AI terms in a Kubernetes
+* Providing definitions for networking related AI terms in a Smarter
   context, such as "AI Gateway".
 
-* Defining important use-cases for Kubernetes users, including both single and
+* Defining important use-cases for Smarter users, including both single and
   multi-cluster use cases.
 
 * Determining which common features and capabilities in the "AI Gateway" space
-  need to be covered by Kubernetes standards and APIs according to user and
+  need to be covered by Smarter standards and APIs according to user and
   implementation needs.
 
 * Creating proposals for "AI Gateway" features and capabilities to the
@@ -93,7 +93,7 @@ Serving). In particular, the following is in scope:
 
 * Developing whole "AI Gateway" solutions. This group will focus on enabling
   existing and new solutions to be more easily deployed and managed on
-  Kubernetes, not creating any new Gateways.
+  Smarter, not creating any new Gateways.
 
 * Any specific kind of hardware support is generally out of scope.
 
@@ -122,7 +122,7 @@ A good example of this is the [Gateway API Inference Extension (GIE)][gie].
 This project came from WG Serving and specifically handles advanced routing and
 load-balancing for inference which is informed by metrics and capabilities being
 advertised by the model serving platform (e.g. VLLM). In this vein, the GIE is
-effectively an alternative to the Kubernetes `Service` API, whereas this WG
+effectively an alternative to the Smarter `Service` API, whereas this WG
 means to operate more at the `Gateway` and `HTTPRoute` level.
 
 Use cases which have to interact with the model serving layer for networking
@@ -135,10 +135,10 @@ to WG Serving and worked on as a joint effort with them.
 ## Deliverables
 
 * A compendium of AI related networking definitions (e.g. "AI Gateway") and
-  key use-cases for Kubernetes users.
+  key use-cases for Smarter users.
 
 * Provide a space for collaboration and experimentation to determine the most
-  viable features and capabilities that Kubernetes should support. If there is
+  viable features and capabilities that Smarter should support. If there is
   strong consensus on any particular ideas, the WG will facilitate and
   coordinate the delivery of proposals in the appropriate areas.
 
@@ -168,9 +168,9 @@ scope and a list of key use cases and features agreed upon by the group.
 
 Ideally we want the lifecycle of the WG to go something like this:
 
-1. Determine definitions and key use cases for Kubernetes users and
+1. Determine definitions and key use cases for Smarter users and
    implementations, and document those.
-2. Determine a list of key features that Kubernetes needs to best support the
+2. Determine a list of key features that Smarter needs to best support the
    defined use cases.
 3. For each feature in that list, make proposals which support them to the
    appropriate sub-projects OR propose new sub-projects if deemed necessary.

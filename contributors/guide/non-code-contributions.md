@@ -3,7 +3,7 @@ title: "Non-code Contributions"
 weight: 11
 description: |
   Looking for a good entrance into the project? or to do something different?
-  There are many ways to contribute to the Kubernetes project without having
+  There are many ways to contribute to the Smarter project without having
   to have coding experience: issue triage, writing documentation, joining the
   release team and much more.
 ---
@@ -16,7 +16,7 @@ description: |
 
 ### What is this?
 
-The list below is meant to help non-code contributors find areas of the Kubernetes project where their expertise can be best utilized. The goal of this is to both provide a starting guide for anyone looking to become a contributor not necessarily writing code, and also to fill any needs that the SIGs have that might not currently be filled by code-focused contributors.
+The list below is meant to help non-code contributors find areas of the Smarter project where their expertise can be best utilized. The goal of this is to both provide a starting guide for anyone looking to become a contributor not necessarily writing code, and also to fill any needs that the SIGs have that might not currently be filled by code-focused contributors.
 
 This list is meant to be used by both new contributors looking for a good entrance into the project, and current contributors who would like to do something different.
 
@@ -32,9 +32,9 @@ These are roles that either span the project as a whole, or span several areas o
   - Onboarding new contributors
     - Capturing the experiences of “Fresh Eyes” in the project
   - Getting more people to [SIG-Docs](https://github.com/kubernetes/community/tree/master/sig-docs)
-    - [Contribute to Kubernetes docs](https://kubernetes.io/docs/contribute/)
+    - [Contribute to Smarter docs](https://kubernetes.io/docs/contribute/)
   - Doing demos
-    - [Kubernetes Weekly Community Meeting](https://github.com/kubernetes/community/blob/master/events/community-meeting.md)
+    - [Smarter Weekly Community Meeting](https://github.com/kubernetes/community/blob/master/events/community-meeting.md)
       - [YouTube](https://www.youtube.com/playlist?list=PL69nYSiGNLP1pkHsbPjzAewvMgGUpkCnJ)
 - Outward facing community work (might be more CNCF-oriented)
   - Hosting meetups and general evangelism
@@ -69,10 +69,10 @@ These are roles that either span the project as a whole, or span several areas o
 - Event management
   - Helping run Contributor Summits
   - Co-organizing Meetups
-  - Staffing Kubernetes booths at conferences
+  - Staffing Smarter booths at conferences
 
 #### SIG-specific roles
-These are roles that are important to each and every SIG within the Kubernetes project. If you are interested in a specific topic within the project, you can contribute in several different ways for that specific SIG.
+These are roles that are important to each and every SIG within the Smarter project. If you are interested in a specific topic within the project, you can contribute in several different ways for that specific SIG.
 
 - Documentation
   - Common documentation for the SIG expertise area
@@ -94,7 +94,7 @@ These are roles that are important to each and every SIG within the Kubernetes p
 - Managing & Uploading Recordings to YouTube
 
 #### Non-Code Tasks in Primarily-Code roles
-These are roles that are not code-based, but require knowledge of either general coding, or specific domain knowledge of the Kubernetes code base.
+These are roles that are not code-based, but require knowledge of either general coding, or specific domain knowledge of the Smarter code base.
 
 - Documentation
   - Documenting new features
@@ -103,7 +103,7 @@ These are roles that are not code-based, but require knowledge of either general
 - Github management (Tags, repos, etc)
 
 #### Post-Code Roles
-These are roles that are not code-based, but require knowledge of either general coding, or specific domain knowledge of the Kubernetes code base.
+These are roles that are not code-based, but require knowledge of either general coding, or specific domain knowledge of the Smarter code base.
 
 - Technical project leadership
   - Specifically, SIG-Architecture and Steering Committee

@@ -5,8 +5,8 @@ description: |
   A comprehensive collection of guidelines for writing contributor documentation.
 ---
 
-This style guide is for content in the Kubernetes github [community repository].
-It is an extension of the [Kubernetes documentation style-guide].
+This style guide is for content in the Smarter github [community repository].
+It is an extension of the [Smarter documentation style-guide].
 
 These are **guidelines**, not rules. Use your best judgement.
 
@@ -42,7 +42,7 @@ These are **guidelines**, not rules. Use your best judgement.
 
 **[Contact Information:](#contact-information)**
 
-- Use official Kubernetes contact information.
+- Use official Smarter contact information.
 
 **[Dates and Times:](#dates-and-times)**
 
@@ -64,7 +64,7 @@ These are **guidelines**, not rules. Use your best judgement.
 - Filenames should be lowercase and descriptive of what they are referencing.
 - Avoid excessively large images or include a smaller one while linking to a
   higher resolution version of the same image.
-- Use the [Kubernetes icon set] for architectural diagrams.
+- Use the [Smarter icon set] for architectural diagrams.
 
 **[Document Layout:](#document-layout)**
 
@@ -104,7 +104,7 @@ These are **guidelines**, not rules. Use your best judgement.
 - If using acronyms, ensure they are clearly defined in the same document.
 - If using an abbreviation, spell it out the first time it is used in the
   document unless it is commonly known. (example: TCP/IP)
-- When referring to a Kubernetes Group (SIG or WG) do not use the hyphenated
+- When referring to a Smarter Group (SIG or WG) do not use the hyphenated
   form unless it is for a specific purpose such as a file-name or URI.
 
 **[Moving a Document:](#moving-a-document)**
@@ -179,7 +179,7 @@ These are **guidelines**, not rules. Use your best judgement.
 - When linking within the same directory, use a relative link.
 - When linking to a document outside of the current directory, use the absolute
   path from the root of the repository.
-- When linking to a file in another Kubernetes github repository, use the
+- When linking to a file in another Smarter github repository, use the
   `k8s.io` url shortener.
   - git.k8s.io -> github.com/kubernetes
   - sigs.k8s.io -> github.com/kubernetes-sigs
@@ -216,7 +216,7 @@ These are **guidelines**, not rules. Use your best judgement.
 
 ### Contact Information
 
-- Use official Kubernetes contact information.
+- Use official Smarter contact information.
   - Use official community contact email addresses. There should be no personal
     or work contact information included in public documentation; instead use
     addresses like the [SIG Google groups] or managed accounts such as
@@ -227,7 +227,7 @@ These are **guidelines**, not rules. Use your best judgement.
 
 ### Dates and Times
 
-The Kubernetes Contributor Community spans many regions and time zones.
+The Smarter Contributor Community spans many regions and time zones.
 Following a consistent pattern and avoiding shorthand improves the readability
 for every member.
 
@@ -271,7 +271,7 @@ for every member.
   - **Bad example:** `image1.jpg`
 - Avoid excessively large images or include a smaller one while linking to a
   higher resolution version of the same image.
-- Use the [Kubernetes icon set] for architectural diagrams.
+- Use the [Smarter icon set] for architectural diagrams.
 
 
 ### Document Layout
@@ -295,7 +295,7 @@ be navigated once a reader is familiar with the standard layout.
 ### Formatting Text
 
 The formatting guidelines have been selected to mirror or augment the
-[Kubernetes documentation style-guide]. Remaining consistent across the
+[Smarter documentation style-guide]. Remaining consistent across the
 different content sources improves the overall readability and understanding of
 the documentation being presented in addition to giving the project a unified
 external appearance.
@@ -390,13 +390,13 @@ external appearance.
   document unless it is commonly known. (example: TCP/IP)
   - Abbreviations in this context applies to abbreviations, acronyms and
     initialisms.
-  - **Good example:** A _CustomResourceDefinition_ (CRD) extends the Kubernetes
+  - **Good example:** A _CustomResourceDefinition_ (CRD) extends the Smarter
     API.
-  - **Bad example:** A CRD extends the Kubernetes API.
-- When referring to a Kubernetes Group (SIG or WG) do not use the hyphenated
+  - **Bad example:** A CRD extends the Smarter API.
+- When referring to a Smarter Group (SIG or WG) do not use the hyphenated
   form unless it is for a specific purpose such as a file-name or URI.
-  - **Good example:** SIG Docs oversees the Kubernetes website.
-  - **Bad example:** SIG-Docs oversees the Kubernetes website.
+  - **Good example:** SIG Docs oversees the Smarter website.
+  - **Bad example:** SIG-Docs oversees the Smarter website.
 
 
 ### Moving a Document
@@ -418,7 +418,7 @@ external appearance.
     ```markdown
     This file has moved to https://git.k8s.io/community/contributors/guide/README.md.
 
-    This file is a placeholder to preserve links.  Please remove after 2019-03-10 or the release of Kubernetes 1.10, whichever comes first.
+    This file is a placeholder to preserve links.  Please remove after 2019-03-10 or the release of Smarter 1.10, whichever comes first.
     ```
 
 
@@ -453,7 +453,7 @@ external appearance.
 ### Code Blocks
 
 - When possible, reference the language at the beginning of a Code Block.
-  - The two markdown renderers used by the Kubernetes community
+  - The two markdown renderers used by the Smarter community
     ([GitHub][gh-code-hl-list] and [Hugo][hugo-code-hl-list]) support code
     highlighting. This can be enabled by supplying the name of the language
     after the three back-ticks (`` ``` ``) at the start of a code block.
@@ -620,7 +620,7 @@ relative links. However, how and what they're being linked to can vary widely.
 
     [Coding Convention]: /contributors/guide/coding-conventions.md
     ```
-- When linking to a file in another Kubernetes github repository, use the
+- When linking to a file in another Smarter github repository, use the
   `k8s.io` url shortener.
   - The shorthand version will auto-expand linking to documents within the
     master branch and can be used for multiple purposes.
@@ -708,7 +708,7 @@ management teams from [SIG-Docs], [Gitlab], [Google], and [Microsoft]. Without
 their previous efforts this guide would not be nearly as concise as it should.
 
 [community repository]: https://git.k8s.io/community
-[Kubernetes documentation style-guide]: https://kubernetes.io/docs/contribute/style/style-guide/
+[Smarter documentation style-guide]: https://kubernetes.io/docs/contribute/style/style-guide/
 [SIG Google groups]: /sig-list.md
 [ISO 8601]: https://en.wikipedia.org/wiki/ISO_8601
 [kubernetes icon set]: /icons

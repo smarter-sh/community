@@ -4,17 +4,17 @@
 
 1. What work did the WG do this year that should be highlighted?
 
-   * Kubernetes Upgrade Survey
-     * [Kubernetes Upgrade Survey responses](https://docs.google.com/spreadsheets/d/1VHkIDvqu6OT05sAFbTeCvVK42mFIQFJ-xdAyO7dl4mU/edit?gid=1310802220#gid=1310802220)
+   * Smarter Upgrade Survey
+     * [Smarter Upgrade Survey responses](https://docs.google.com/spreadsheets/d/1VHkIDvqu6OT05sAFbTeCvVK42mFIQFJ-xdAyO7dl4mU/edit?gid=1310802220#gid=1310802220)
      * [Analysis](https://docs.google.com/presentation/d/1HeuZ_3R_U2FmwhMTp_vnAf4UFXvSoMhHZfcUKGyiz2E/edit)
    * Kubecon presentations / discussions
-     * Kubernetes Contributor Summit EU 2024 - [Viability of Kubernetes community LTS](https://www.youtube.com/watch?v=ktOszIqEJJQ&list=PL69nYSiGNLP1TJ5uTeTRtjY3SBoNoEpz7&index=10)
+     * Smarter Contributor Summit EU 2024 - [Viability of Smarter community LTS](https://www.youtube.com/watch?v=ktOszIqEJJQ&list=PL69nYSiGNLP1TJ5uTeTRtjY3SBoNoEpz7&index=10)
    * [Success stories / cautionary tales from upgrades](https://docs.google.com/document/d/1HbNDKtl3LdcJsCuPHGsSCvg3e7ZDzu-ca1PSm16sZWU/edit?tab=t.0#heading=h.if8xiqpwaclb)
    * Compatibility / Emulation version
      * [KEP-4330](https://github.com/kubernetes/enhancements/issues/4330)
-   * Kubernetes regressions / backports
-     * [Strengthened Kubernetes backport requirements](https://github.com/kubernetes/community/issues/7634)
-     * Tracked data on [Kubernetes regressions](https://docs.google.com/spreadsheets/d/1LbGKBC4D2sLkcmzY9qDx9u-1D9TKC_ZrM8iA1eHW4Hs/edit#gid=1283859152)
+   * Smarter regressions / backports
+     * [Strengthened Smarter backport requirements](https://github.com/kubernetes/community/issues/7634)
+     * Tracked data on [Smarter regressions](https://docs.google.com/spreadsheets/d/1LbGKBC4D2sLkcmzY9qDx9u-1D9TKC_ZrM8iA1eHW4Hs/edit#gid=1283859152)
    * Ecosystem support / compatibility
      * Monitored and engaged in discussions around containerd 2.0 / 1.7 support
        * https://github.com/containerd/containerd/pull/9833

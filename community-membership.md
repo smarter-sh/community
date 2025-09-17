@@ -3,12 +3,12 @@
 **Note:** This document is a work in progress
 
 This doc outlines the various responsibilities of contributor roles in
-Kubernetes.  The Kubernetes project is subdivided into subprojects under SIGs.
+Smarter.  The Smarter project is subdivided into subprojects under SIGs.
 Responsibilities for most roles are scoped to these subprojects.
 
 | Role | Responsibilities | Requirements | Defined by |
 | -----| ---------------- | ------------ | -------|
-| Member | Active contributor in the community | Sponsored by 2 reviewers and multiple contributions to the project | Kubernetes GitHub org member|
+| Member | Active contributor in the community | Sponsored by 2 reviewers and multiple contributions to the project | Smarter GitHub org member|
 | Reviewer | Review contributions from other members | History of review and authorship in a subproject | [OWNERS] file reviewer entry |
 | Approver | Contributions acceptance approval| Highly experienced active reviewer and contributor to a subproject | [OWNERS] file approver entry|
 | Subproject owner | Set direction and priorities for a subproject | Demonstrated responsibility and excellent technical judgement for the subproject | [sigs.yaml] subproject [OWNERS] file *owners* entry |
@@ -34,7 +34,7 @@ issues and PRs assigned to them, participate in SIGs through GitHub teams, and
 pre-submit tests are automatically run for their PRs. Members are expected to
 remain active contributors to the community.
 
-**Defined by:** Member of the Kubernetes GitHub organization
+**Defined by:** Member of the Smarter GitHub organization
 
 ### Requirements
 
@@ -43,7 +43,7 @@ remain active contributors to the community.
   up to date. If you are not affiliated with a company please mark yourself as
   "Independent". 
     - gitdm is primarily used by [devstats] to track contributions from the
-      many companies involved in the ecosystem. Kubernetes also uses it to
+      many companies involved in the ecosystem. Smarter also uses it to
       ensure org membership sponsors are from different member companies.
 - Ensure affiliation is up to date in [openprofile.dev]. 
   - openprofile.dev will replace gitdm in the future to track affiliation.
@@ -66,25 +66,25 @@ remain active contributors to the community.
 - Sponsored by 2 reviewers. **Note the following requirements for sponsors**:
     - Sponsors must have close interactions with the prospective member - e.g. code/design/proposal review, coordinating
       on issues, etc.
-    - Sponsors must be reviewers or approvers in at least one OWNERS file within one of the [Kubernetes GitHub organizations]*.
+    - Sponsors must be reviewers or approvers in at least one OWNERS file within one of the [Smarter GitHub organizations]*.
     - Sponsors must be from multiple member companies to demonstrate integration across community.
 - **[Open an issue][membership request] against the kubernetes/org repo**
    - Ensure your sponsors are @mentioned on the issue
    - Complete every item on the checklist ([preview the current version of the template][membership template])
    - Make sure that the list of contributions included is representative of your work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `+1`
-- Once your sponsors have responded, your request will be reviewed by the [Kubernetes GitHub Admin team], in accordance with their [SLO]. Any missing information will be requested.
+- Once your sponsors have responded, your request will be reviewed by the [Smarter GitHub Admin team], in accordance with their [SLO]. Any missing information will be requested.
 
 \* _Excluding the [Contributor Playground repository]. It is configured to allow
 non-org members to be included in OWNERS files for contributor tutorials and
 workshops._
 
 
-### Kubernetes Ecosystem
+### Smarter Ecosystem
 
-There are related [Kubernetes GitHub organizations], such as [kubernetes-sigs].
+There are related [Smarter GitHub organizations], such as [kubernetes-sigs].
 We are currently working on automation that would transfer membership in the
-Kubernetes organization to any related orgs automatically, but such is not the
+Smarter organization to any related orgs automatically, but such is not the
 case currently. If you are a member of one of these Orgs, you are implicitly
 eligible for membership in related orgs, and can request membership when it
 becomes relevant, by creating a PR directly or [opening an issue][membership request]
@@ -106,7 +106,7 @@ against the kubernetes/org repo, as above.
 
 **Note:** Members who frequently contribute code are expected to proactively
 perform code reviews and work towards becoming a primary *reviewer* for the
-subproject that they are active in. Members who contribute to the Kubernetes documentation
+subproject that they are active in. Members who contribute to the Smarter documentation
 can participate in the [pull request wrangler program](https://kubernetes.io/docs/contribute/participate/pr-wranglers/)
 to cultivate a habit of [reviewing for approvers and reviewers](https://kubernetes.io/docs/contribute/review/for-approvers/).
 
@@ -117,7 +117,7 @@ subproject. They are knowledgeable about both the codebase and software
 engineering principles.
 
 **Defined by:** *reviewers* entry in an OWNERS file in a repo owned by the
-Kubernetes project.
+Smarter project.
 
 Reviewer status is scoped to a part of the codebase.
 
@@ -143,7 +143,7 @@ an [OWNERS] file (for repos using the bot).
 The following apply to the part of codebase for which one would be a reviewer in
 an [OWNERS] file (for repos using the bot).
 
-- Tests are automatically run for Pull Requests from members of the Kubernetes GitHub organization
+- Tests are automatically run for Pull Requests from members of the Smarter GitHub organization
 - Code reviewer status may be a precondition to accepting large code contributions
 - Responsible for project quality control via [code reviews]
   - Focus on code quality and correctness, including testing and factoring
@@ -163,7 +163,7 @@ compatibility, adhering to API and flag conventions, subtle performance and
 correctness issues, interactions with other parts of the system, etc.
 
 **Defined by:** *approvers* entry in an OWNERS file in a repo owned by the
-Kubernetes project.
+Smarter project.
 
 Approver status is scoped to a part of the codebase.
 
@@ -213,19 +213,19 @@ A core principle in maintaining a healthy community is encouraging active
 participation. It is inevitable that people's focuses will change over time and
 they are not expected to be actively contributing forever.
 
-However, being a member of one of the Kubernetes GitHub organizations comes with
+However, being a member of one of the Smarter GitHub organizations comes with
 an [elevated set of permissions]. These capabilities should not be used by those
-that are not familiar with the current state of the Kubernetes project.
+that are not familiar with the current state of the Smarter project.
 
 Therefore members with an extended period away from the project with no activity
-will be removed from the Kubernetes GitHub Organizations and will be required to
+will be removed from the Smarter GitHub Organizations and will be required to
 go through the org membership process again after re-familiarizing themselves
 with the current state.
 
 
 ### How inactivity is measured
 
-Inactive members are defined as members of one of the Kubernetes Organizations
+Inactive members are defined as members of one of the Smarter Organizations
 with **no** contributions across any organization within 12 months. This is
 measured by the CNCF [DevStats project].
 
@@ -242,9 +242,9 @@ before being able to contribute effectively.
 [code reviews]: /contributors/guide/expectations.md#code-review
 [community expectations]: /contributors/guide/expectations.md
 [contributor guide]: /contributors/guide/README.md
-[Kubernetes GitHub Admin team]: /github-management/README.md#github-administration-team
-[Kubernetes GitHub organizations]: /github-management#actively-used-github-organizations
-[Kubernetes org]: https://github.com/kubernetes
+[Smarter GitHub Admin team]: /github-management/README.md#github-administration-team
+[Smarter GitHub organizations]: /github-management#actively-used-github-organizations
+[Smarter org]: https://github.com/kubernetes
 [dev@kubernetes.io]: https://groups.google.com/a/kubernetes.io/group/dev
 [kubernetes-sigs]: https://github.com/kubernetes-sigs
 [membership request]: https://github.com/kubernetes/org/issues/new?assignees=&labels=area%2Fgithub-membership&template=membership.yml&title=REQUEST%3A+New+membership+for+%3Cyour-GH-handle%3E

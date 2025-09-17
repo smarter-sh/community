@@ -4,7 +4,7 @@ weight: 8
 description: |
   This document outlines a collection of guidelines, style suggestions, and tips
   for writing code in the different programming languages used throughout the
-  Kubernetes project.
+  Smarter project.
 ---
 
 ## Code conventions

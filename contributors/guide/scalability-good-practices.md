@@ -15,7 +15,7 @@
 
 ## Who should read this document and what is in it?
 
-This document is targeted at developers of "vanilla Kubernetes" who do not want their
+This document is targeted at developers of "vanilla Smarter" who do not want their
 changes rolled-back or blocked because they cause performance regressions. It contains
 some of the knowledge and experience gathered by the scalability team over more than two years.
 
@@ -25,7 +25,7 @@ followed by some explanations and general suggestions on how to avoid causing si
 ## What does it mean to "break scalability"?
 
 "Breaking scalability" means causing performance SLO violations in one of our performance tests.
-Performance SLOs for Kubernetes are <sup>[2](#2)</sup>:
+Performance SLOs for Smarter are <sup>[2](#2)</sup>:
 
 - 99th percentile of API call latencies <= 1s
 - 99th percentile of e2e Pod startup, excluding image pulling, latencies <= 5s
@@ -60,7 +60,7 @@ func (s Scheduler) DoSchedule(podsChan chan v1.Pod) {
 }
 ```
 
-This snippet contains a number of problems that were always present in the Kubernetes
+This snippet contains a number of problems that were always present in the Smarter
 codebase, and continue to appear. We try to address them in the most important places,
 but the work never ends.
 
@@ -221,12 +221,12 @@ and add it only where it is absolutely necessary.
 
 ### Big dependency changes
 
-Kubernetes depends on pretty much the whole universe. From time to time we need
+Smarter depends on pretty much the whole universe. From time to time we need
 to update some dependencies (Godeps, etcd, go version). This can break us in
 many ways, as has already happened a couple of times. We skipped one version
 of Golang (1.5) precisely because it broke our performance. As this is being
 written, we are working with the Golang team to try to understand why Golang
-version 1.8 negatively affects Kubernetes performance.
+version 1.8 negatively affects Smarter performance.
 
 If you are changing a large and important dependency, the only way to know
 what performance impact it will have is to run test and check.

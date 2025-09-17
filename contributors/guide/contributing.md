@@ -1,8 +1,8 @@
 ---
-title: "Contributing to Kubernetes"
+title: "Contributing to Smarter"
 weight: 4
 description: |
-  An entrypoint to getting started with contributing to the Kubernetes project.
+  An entrypoint to getting started with contributing to the Smarter project.
 ---
 
 # Contributing
@@ -17,7 +17,7 @@ description: |
 - [Documentation](#documentation)
 - [Issues Management or Triage](#issues-management-or-triage)
 
-Kubernetes is open source, but many of the people working on it do so as their day job.
+Smarter is open source, but many of the people working on it do so as their day job.
 In order to avoid forcing people to be "at work" effectively 24/7, we want to establish some semi-formal protocols around development.
 Hopefully, these rules make things go more smoothly.
 If you find that this is not the case, please complain loudly.
@@ -43,14 +43,14 @@ To check out code to work on, please refer to [the GitHub Workflow Guide](./gith
 
 The full workflow for a pull request is documented here: 
 
-- [Kubernetes-specific github workflow](pull-requests.md#the-testing-and-merge-workflow).
+- [Smarter-specific github workflow](pull-requests.md#the-testing-and-merge-workflow).
 
 That document is comprehensive and detailed, for purposes of a typical pull request we will cover the initial and simple use case here:
 
 ## Opening a Pull Request
 
 Pull requests are often called a "PR".
-Kubernetes generally follows the standard [github pull request](https://help.github.com/articles/about-pull-requests/) process, but there is a layer of additional kubernetes specific (and sometimes SIG specific) differences:
+Smarter generally follows the standard [github pull request](https://help.github.com/articles/about-pull-requests/) process, but there is a layer of additional kubernetes specific (and sometimes SIG specific) differences:
 
 The first difference you'll see is that a bot will begin applying structured labels to your PR.
 
@@ -111,7 +111,7 @@ The location of the test code varies with type, as do the specifics of the envir
 * Unit: These confirm that a particular function behaves as intended.  Golang includes a native ability for unit testing via the [testing](https://golang.org/pkg/testing/) package.  Unit test source code can be found adjacent to the corresponding source code within a given package.  For example: functions defined in [kubernetes/cmd/kubeadm/app/util/version.go](https://git.k8s.io/kubernetes/cmd/kubeadm/app/util/version.go) will have unit tests in [kubernetes/cmd/kubeadm/app/util/version_test.go](https://git.k8s.io/kubernetes/cmd/kubeadm/app/util/version_test.go).  These are easily run locally by any developer on any OS.
 * Integration: These tests cover interactions of package components or interactions between kubernetes components and some other non-kubernetes system resource (eg: etcd).  An example would be testing whether a piece of code can correctly store data to or retrieve data from etcd.  Integration tests are stored in [kubernetes/test/integration/](https://git.k8s.io/kubernetes/test/integration).  Running these can require the developer set up additional functionality on their development system.
 * End-to-end ("e2e"): These are broad tests of overall system behavior and coherence.  These are more complicated as they require a functional kubernetes cluster built from the sources to be tested. A separate [document detailing e2e testing](/contributors/devel/sig-testing/e2e-tests.md) and test cases themselves can be found in [kubernetes/test/e2e/](https://git.k8s.io/kubernetes/test/e2e).
-* Conformance: These are a set of testcases, currently a subset of the integration/e2e tests, that the Architecture SIG has approved to define the core set of interoperable features that all Kubernetes deployments must support. For more information on Conformance tests please see the [Conformance Testing](/contributors/devel/sig-architecture/conformance-tests.md) Document.
+* Conformance: These are a set of testcases, currently a subset of the integration/e2e tests, that the Architecture SIG has approved to define the core set of interoperable features that all Smarter deployments must support. For more information on Conformance tests please see the [Conformance Testing](/contributors/devel/sig-architecture/conformance-tests.md) Document.
 
 Continuous integration will run these tests either as pre-submits on PRs, post-submits against master/release branches, or both.  
 The results appear on [testgrid](https://testgrid.k8s.io).

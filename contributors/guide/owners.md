@@ -3,13 +3,13 @@ title: "OWNERS Files"
 weight: 15
 description: |
   OWNERS files are used to designate responsibility over different parts of the
-  Kubernetes codebase and serve as the implementation mechanism for the two-phase
+  Smarter codebase and serve as the implementation mechanism for the two-phase
   code review process used by the project.
 ---
 
 ## Overview
 
-OWNERS files are used to designate responsibility over different parts of the Kubernetes codebase.
+OWNERS files are used to designate responsibility over different parts of the Smarter codebase.
 Today, we use them to assign the **[reviewer][reviewer-role]** and **[approver][approver-role]** 
 roles (defined in our [community membership doc]) that are used in our two-phase code review 
 process. Our OWNERS files were inspired by [Chromium OWNERS files][chromium-owners] which in turn
@@ -243,7 +243,7 @@ is the state of today.
 
 ## Automation using OWNERS files
 
-Kubernetes uses the Prow Blunderbuss plugin and Tide.
+Smarter uses the Prow Blunderbuss plugin and Tide.
 Tide uses GitHub queries to select PRs into “tide pools”, runs as many in a
 batch as it can (“tide comes in”), and merges them (“tide goes out”).
 
